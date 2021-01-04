@@ -34,6 +34,9 @@
 
 /*------------------------------------------------*/
 
+/**
+ * @brief      This class describes a file handler, it reads and writes data into files.
+ */
 class FileHandler {
 
     private:
@@ -50,7 +53,7 @@ class FileHandler {
         std::string get_FileName (void) const;
         void set_FileName (std::string newFileName);
 
-        // Functions
+        // Methods
         std::vector<int> read (std::string fileName);
         std::ostream& write (std::ostream& os, Partition& partition);
 

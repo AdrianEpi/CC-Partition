@@ -26,7 +26,7 @@
  * 		   Adrian Epifanio Rodríguez
 * @Date:   2020-12-24 09:02:04
 * @Last Modified by:   Adrian Epifanio
-* @Last Modified time: 2021-01-04 09:37:04
+* @Last Modified time: 2021-01-04 10:06:26
 */
 /*------------------  FUNCTIONS  -----------------*/
 
@@ -75,6 +75,13 @@ void FileHandler::set_FileName (std::string newFileName) {
 	fileName_ = newFileName;
 }
 
+/**
+ * @brief      Reads the numbers from file and stores them in a vector
+ *
+ * @param[in]  fileName  The file name
+ *
+ * @return     The vector with the numbers
+ */
 std::vector<int> FileHandler::read (std::string fileName) {
 	std::ifstream input(fileName, std::ios::in);
 	std::vector<int> originalVector;
@@ -95,27 +102,41 @@ std::vector<int> FileHandler::read (std::string fileName) {
 	return originalVector;
 }
 
+/**
+ * @brief      Saves the partition solution in file
+ *
+ * @param      os         The output stream
+ * @param      partition  The partition
+ *
+ * @return     The output stream
+ */
 std::ostream& FileHandler::write (std::ostream& os, Partition& partition) {
-	/*partition.printByConsole();
+	if (partition.get_Partitioned()) {
+		/*partition.printByConsole();
 
-	os << "Original Vector:" << std::endl << "\t[ ";
-	for (int i = 0; i < partition.get_OriginalVector().size() - 1; i++) {
-		os << partition.get_OriginalVector()[i] << ", ";
-	}
-	os << partition.get_OriginalVector()[partition.get_OriginalVector().size() - 1] << " ]" << std::endl << std::endl;
-	
-	os << "V1:" << std::endl << "\t{ ";
-	for (int i = 0; i < partition.get_V1().size() - 1; i++) {
-		os << partition.get_V1()[i] << ", ";
-	}
-	os << partition.get_V1()[partition.get_V1().size() - 1] << " }" << std::endl << std::endl;
+		os << "Original Vector:" << std::endl << "\t[ ";
+		for (int i = 0; i < partition.get_OriginalVector().size() - 1; i++) {
+			os << partition.get_OriginalVector()[i] << ", ";
+		}
+		os << partition.get_OriginalVector()[partition.get_OriginalVector().size() - 1] << " ]" << std::endl << std::endl;
+		
+		os << "V1:" << std::endl << "\t{ ";
+		for (int i = 0; i < partition.get_V1().size() - 1; i++) {
+			os << partition.get_V1()[i] << ", ";
+		}
+		os << partition.get_V1()[partition.get_V1().size() - 1] << " }" << std::endl << std::endl;
 
-	os << "V2:" << std::endl << "\t{ ";
-	for (int i = 0; i < partition.get_V2().size() - 1; i++) {
-		os << partition.get_V2()[i] << ", ";
+		os << "V2:" << std::endl << "\t{ ";
+		for (int i = 0; i < partition.get_V2().size() - 1; i++) {
+			os << partition.get_V2()[i] << ", ";
+		}
+		os << partition.get_V2()[partition.get_V2().size() - 1] << " }" << std::endl << std::endl;
+	*/
 	}
-	os << partition.get_V2()[partition.get_V2().size() - 1] << " }" << std::endl << std::endl;
-*/
+	else {
+		std::cout << std::endl << "The array cannot be partitioned into equal sum sets." << std::endl;
+		os << std::endl << "The array cannot be partitioned into equal sum sets." << std::endl;
+	}
 	return os;
 }
 
