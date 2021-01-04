@@ -8,5 +8,5 @@ The aim of this project is to **prove that this problem is NP-Complete**.
 
 <div align="center">
   <br>
-  <img src="img/example.jpg" alt="Markdownify" width="200">
+  <img src="img/example.jpg" alt="Markdownify" width="500">
 </div>
