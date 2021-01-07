@@ -29,6 +29,8 @@
 
 #include <iostream>
 #include <vector>
+#include <algorithm>
+#include <cstring>
 
 /*------------------------------------------------*/
 
@@ -40,6 +42,7 @@ class Partition {
         std::vector<int> v1_;           // The first vector of the solution
         std::vector<int> v2_;           // The second vector of the solution
         bool partitioned_;
+        int sum_;
 
     public:
         // Builders & Destroyer
@@ -61,8 +64,10 @@ class Partition {
         // Methods
         void printByConsole (void);
         int calculateSum (std::vector<int>& v);
-        bool isSubsetSum(std::vector<int>& v, int n, int sum);
-        void findPartition(std::vector<int>& v);
-        bool dynamicFindPartition(std::vector<int> v);
+        bool isSubsetSum(std::vector<int> v, int n, int sum);
+        void findPartition(void);
+        bool dynamicFindPartition(void);
+        bool findSolution (std::vector<int> v1, std::vector<int> v2, unsigned n);
+        bool sortAndSolve (void);
 
 };

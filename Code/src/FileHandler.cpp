@@ -26,7 +26,7 @@
  * 		   Adrian Epifanio Rodríguez
 * @Date:   2020-12-24 09:02:04
 * @Last Modified by:   Adrian Epifanio
-* @Last Modified time: 2021-01-04 10:06:26
+* @Last Modified time: 2021-01-07 10:08:01
 */
 /*------------------  FUNCTIONS  -----------------*/
 
@@ -90,6 +90,7 @@ std::vector<int> FileHandler::read (std::string fileName) {
 		exit(1);
 	}
 	else {
+		set_FileName(fileName);
 		int numAmmount = 0;
 		input >> numAmmount;
 		for (int i = 0; i < numAmmount; i++) {
@@ -112,26 +113,26 @@ std::vector<int> FileHandler::read (std::string fileName) {
  */
 std::ostream& FileHandler::write (std::ostream& os, Partition& partition) {
 	if (partition.get_Partitioned()) {
-		/*partition.printByConsole();
+		partition.printByConsole();
 
 		os << "Original Vector:" << std::endl << "\t[ ";
-		for (int i = 0; i < partition.get_OriginalVector().size() - 1; i++) {
-			os << partition.get_OriginalVector()[i] << ", ";
+		for (unsigned i = 0; i < partition.get_Original().size() - 1; i++) {
+			os << partition.get_Original()[i] << ", ";
 		}
-		os << partition.get_OriginalVector()[partition.get_OriginalVector().size() - 1] << " ]" << std::endl << std::endl;
+		os << partition.get_Original()[partition.get_Original().size() - 1] << " ]" << std::endl << std::endl;
 		
 		os << "V1:" << std::endl << "\t{ ";
-		for (int i = 0; i < partition.get_V1().size() - 1; i++) {
+		for (unsigned i = 0; i < partition.get_V1().size() - 1; i++) {
 			os << partition.get_V1()[i] << ", ";
 		}
 		os << partition.get_V1()[partition.get_V1().size() - 1] << " }" << std::endl << std::endl;
 
 		os << "V2:" << std::endl << "\t{ ";
-		for (int i = 0; i < partition.get_V2().size() - 1; i++) {
+		for (unsigned i = 0; i < partition.get_V2().size() - 1; i++) {
 			os << partition.get_V2()[i] << ", ";
 		}
 		os << partition.get_V2()[partition.get_V2().size() - 1] << " }" << std::endl << std::endl;
-	*/
+	
 	}
 	else {
 		std::cout << std::endl << "The array cannot be partitioned into equal sum sets." << std::endl;

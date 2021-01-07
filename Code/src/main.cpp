@@ -26,9 +26,16 @@
  * 		   Adrian Epifanio Rodríguez
 * @Date:   2020-12-24 09:01:33
 * @Last Modified by:   Adrian Epifanio
-* @Last Modified time: 2021-01-04 09:19:58
+* @Last Modified time: 2021-01-07 10:03:08
 */
 
-int main (void) {
+#include "../include/FileHandler.hpp"
 
+int main (void) {
+	FileHandler newFile;
+	std::vector<int> v = newFile.read("../inputs/example.txt");
+	Partition newPartition(v);
+	newPartition.set_Partitioned(newPartition.sortAndSolve());
+	//newFile.write(std::cout, newPartition);
+	newPartition.printByConsole();
 }
