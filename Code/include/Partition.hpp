@@ -34,6 +34,9 @@
 
 /*------------------------------------------------*/
 
+/**
+ * @brief      This class describes the partition problem.
+ */
 class Partition {
 
     private:
@@ -41,8 +44,8 @@ class Partition {
         std::vector<int> original_;     // The vector with all the numbers
         std::vector<int> v1_;           // The first vector of the solution
         std::vector<int> v2_;           // The second vector of the solution
-        bool partitioned_;
-        int sum_;
+        bool partitioned_;              // If the problem has solution or not
+        int sum_;                       // The sum of all the numbers in the original vector
 
     public:
         // Builders & Destroyer
