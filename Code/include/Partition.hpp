@@ -72,5 +72,5 @@ class Partition {
         bool dynamicFindPartition(void);
         bool findSolution (std::vector<int> v1, std::vector<int> v2, unsigned n);
         bool sortAndSolve (void);
-
+ 
 };
