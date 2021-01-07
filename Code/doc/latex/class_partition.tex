@@ -1,0 +1,344 @@
+\hypertarget{class_partition}{}\doxysection{Partition Class Reference}
+\label{class_partition}\index{Partition@{Partition}}
+
+
+This class describes the partition problem.  
+
+
+
+
+{\ttfamily \#include $<$Partition.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_partition_a0ba6f7c137ad9e0458afe87214b9b39a}\label{class_partition_a0ba6f7c137ad9e0458afe87214b9b39a}} 
+\mbox{\hyperlink{class_partition_a0ba6f7c137ad9e0458afe87214b9b39a}{Partition}} (void)
+\begin{DoxyCompactList}\small\item\em Constructs a new instance. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_partition_ae9e3c74822ea92a865947758169264af}{Partition}} (std\+::vector$<$ int $>$ original)
+\begin{DoxyCompactList}\small\item\em Constructs a new instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_partition_a3bcd86e7787e2fd95ee94cfbdd16640c}\label{class_partition_a3bcd86e7787e2fd95ee94cfbdd16640c}} 
+\mbox{\hyperlink{class_partition_a3bcd86e7787e2fd95ee94cfbdd16640c}{$\sim$\+Partition}} (void)
+\begin{DoxyCompactList}\small\item\em Destroys the object. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_partition_a6f8fee43cb98441fb7b93e40740427cd}{get\+\_\+\+Original}} (void) const
+\begin{DoxyCompactList}\small\item\em Gets the original vector. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_partition_a6ef8d37c7473681df6b610f9944f59de}{get\+\_\+\+V1}} (void) const
+\begin{DoxyCompactList}\small\item\em Gets the solution vector 1. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_partition_ab6807a6723259f5b401ae221b5d5bb16}{get\+\_\+\+V2}} (void) const
+\begin{DoxyCompactList}\small\item\em Gets the solution vector 2. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_partition_aa3efa1cd70f53399b85c8fe090f08f01}{get\+\_\+\+Partitioned}} (void) const
+\begin{DoxyCompactList}\small\item\em Gets if it\textquotesingle{}s partitioned or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_partition_a96f986581b918e7c4a2c4814886a5631}{set\+\_\+\+Original}} (std\+::vector$<$ int $>$ new\+Original)
+\begin{DoxyCompactList}\small\item\em Sets the original vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_partition_a2f86aa4800be2c63ff2a48b91525c34e}{set\+\_\+\+V1}} (std\+::vector$<$ int $>$ new\+V1)
+\begin{DoxyCompactList}\small\item\em Sets the solution vector 1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_partition_ae8ea5a80362f1863e1265610a6db98cf}{set\+\_\+\+V2}} (std\+::vector$<$ int $>$ new\+V2)
+\begin{DoxyCompactList}\small\item\em Sets the solution vector 2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_partition_a30db71090e3ddc3404bf196f819955de}{set\+\_\+\+Partitioned}} (bool new\+Partitioned)
+\begin{DoxyCompactList}\small\item\em Sets if it\textquotesingle{}s partitioned or not. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_partition_acd437552c709b7e557b1b2d638d051a8}\label{class_partition_acd437552c709b7e557b1b2d638d051a8}} 
+void \mbox{\hyperlink{class_partition_acd437552c709b7e557b1b2d638d051a8}{print\+By\+Console}} (void)
+\begin{DoxyCompactList}\small\item\em Prints the solution by console painting them in different colors. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_partition_a6c2d6e0f61557393ddfe1ada36ebd55e}{calculate\+Sum}} (std\+::vector$<$ int $>$ \&v)
+\begin{DoxyCompactList}\small\item\em Calculates the sum of the integers in the given vector. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_partition_ab8cf0542c688fe66a68c98020aecf31c}{is\+Subset\+Sum}} (std\+::vector$<$ int $>$ v, int n, int sum)
+\begin{DoxyCompactList}\small\item\em Determines if there is a subset of v with sum equal to given sum recursively. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_partition_a44784f5091bf00db5c73be238b48afb6}\label{class_partition_a44784f5091bf00db5c73be238b48afb6}} 
+void \mbox{\hyperlink{class_partition_a44784f5091bf00db5c73be238b48afb6}{find\+Partition}} (void)
+\begin{DoxyCompactList}\small\item\em Finds if there\textquotesingle{}s a partition solution recursively. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_partition_a0fe500a0fb71bc0abb922a0ceeeeecd8}{dynamic\+Find\+Partition}} (void)
+\begin{DoxyCompactList}\small\item\em The problem solved using dynamic programming when the sum of the elements is not too big. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_partition_ab1b6b54e2de3c7b871d532dc2cacc110}{find\+Solution}} (std\+::vector$<$ int $>$ v1, std\+::vector$<$ int $>$ v2, unsigned n)
+\begin{DoxyCompactList}\small\item\em Finds the solution to the partition problem recursively. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_partition_a42c5bde9a4b286b9262193b126e4ab19}{sort\+And\+Solve}} (void)
+\begin{DoxyCompactList}\small\item\em Sorts the vector and solves the partition solution. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class describes the partition problem. 
+
+Definition at line 40 of file Partition.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_partition_ae9e3c74822ea92a865947758169264af}\label{class_partition_ae9e3c74822ea92a865947758169264af}} 
+\index{Partition@{Partition}!Partition@{Partition}}
+\index{Partition@{Partition}!Partition@{Partition}}
+\doxysubsubsection{\texorpdfstring{Partition()}{Partition()}}
+{\footnotesize\ttfamily Partition\+::\+Partition (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{original }\end{DoxyParamCaption})}
+
+
+
+Constructs a new instance. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em original} & The original vector \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 48 of file Partition.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_partition_a6c2d6e0f61557393ddfe1ada36ebd55e}\label{class_partition_a6c2d6e0f61557393ddfe1ada36ebd55e}} 
+\index{Partition@{Partition}!calculateSum@{calculateSum}}
+\index{calculateSum@{calculateSum}!Partition@{Partition}}
+\doxysubsubsection{\texorpdfstring{calculateSum()}{calculateSum()}}
+{\footnotesize\ttfamily int Partition\+::calculate\+Sum (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{v }\end{DoxyParamCaption})}
+
+
+
+Calculates the sum of the integers in the given vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The integers vector\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The sum. 
+\end{DoxyReturn}
+
+
+Definition at line 195 of file Partition.\+cpp.
+
+\mbox{\Hypertarget{class_partition_a0fe500a0fb71bc0abb922a0ceeeeecd8}\label{class_partition_a0fe500a0fb71bc0abb922a0ceeeeecd8}} 
+\index{Partition@{Partition}!dynamicFindPartition@{dynamicFindPartition}}
+\index{dynamicFindPartition@{dynamicFindPartition}!Partition@{Partition}}
+\doxysubsubsection{\texorpdfstring{dynamicFindPartition()}{dynamicFindPartition()}}
+{\footnotesize\ttfamily bool Partition\+::dynamic\+Find\+Partition (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+The problem solved using dynamic programming when the sum of the elements is not too big. 
+
+\begin{DoxyReturn}{Returns}
+True if it has solution, False otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 256 of file Partition.\+cpp.
+
+\mbox{\Hypertarget{class_partition_ab1b6b54e2de3c7b871d532dc2cacc110}\label{class_partition_ab1b6b54e2de3c7b871d532dc2cacc110}} 
+\index{Partition@{Partition}!findSolution@{findSolution}}
+\index{findSolution@{findSolution}!Partition@{Partition}}
+\doxysubsubsection{\texorpdfstring{findSolution()}{findSolution()}}
+{\footnotesize\ttfamily bool Partition\+::find\+Solution (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{v1,  }\item[{std\+::vector$<$ int $>$}]{v2,  }\item[{unsigned}]{n }\end{DoxyParamCaption})}
+
+
+
+Finds the solution to the partition problem recursively. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em v1} & The vector 1 \\
+\hline
+\mbox{\texttt{ in}}  & {\em v2} & The vector 2 \\
+\hline
+\mbox{\texttt{ in}}  & {\em n} & The position in the original vector\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it finds solution, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 319 of file Partition.\+cpp.
+
+\mbox{\Hypertarget{class_partition_a6f8fee43cb98441fb7b93e40740427cd}\label{class_partition_a6f8fee43cb98441fb7b93e40740427cd}} 
+\index{Partition@{Partition}!get\_Original@{get\_Original}}
+\index{get\_Original@{get\_Original}!Partition@{Partition}}
+\doxysubsubsection{\texorpdfstring{get\_Original()}{get\_Original()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Partition\+::get\+\_\+\+Original (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the original vector. 
+
+\begin{DoxyReturn}{Returns}
+The original vector. 
+\end{DoxyReturn}
+
+
+Definition at line 64 of file Partition.\+cpp.
+
+\mbox{\Hypertarget{class_partition_aa3efa1cd70f53399b85c8fe090f08f01}\label{class_partition_aa3efa1cd70f53399b85c8fe090f08f01}} 
+\index{Partition@{Partition}!get\_Partitioned@{get\_Partitioned}}
+\index{get\_Partitioned@{get\_Partitioned}!Partition@{Partition}}
+\doxysubsubsection{\texorpdfstring{get\_Partitioned()}{get\_Partitioned()}}
+{\footnotesize\ttfamily bool Partition\+::get\+\_\+\+Partitioned (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets if it\textquotesingle{}s partitioned or not. 
+
+\begin{DoxyReturn}{Returns}
+True if it\textquotesingle{}s partitioned, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 91 of file Partition.\+cpp.
+
+\mbox{\Hypertarget{class_partition_a6ef8d37c7473681df6b610f9944f59de}\label{class_partition_a6ef8d37c7473681df6b610f9944f59de}} 
+\index{Partition@{Partition}!get\_V1@{get\_V1}}
+\index{get\_V1@{get\_V1}!Partition@{Partition}}
+\doxysubsubsection{\texorpdfstring{get\_V1()}{get\_V1()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Partition\+::get\+\_\+\+V1 (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the solution vector 1. 
+
+\begin{DoxyReturn}{Returns}
+The solution vector 1. 
+\end{DoxyReturn}
+
+
+Definition at line 73 of file Partition.\+cpp.
+
+\mbox{\Hypertarget{class_partition_ab6807a6723259f5b401ae221b5d5bb16}\label{class_partition_ab6807a6723259f5b401ae221b5d5bb16}} 
+\index{Partition@{Partition}!get\_V2@{get\_V2}}
+\index{get\_V2@{get\_V2}!Partition@{Partition}}
+\doxysubsubsection{\texorpdfstring{get\_V2()}{get\_V2()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Partition\+::get\+\_\+\+V2 (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the solution vector 2. 
+
+\begin{DoxyReturn}{Returns}
+The solution vector 2. 
+\end{DoxyReturn}
+
+
+Definition at line 82 of file Partition.\+cpp.
+
+\mbox{\Hypertarget{class_partition_ab8cf0542c688fe66a68c98020aecf31c}\label{class_partition_ab8cf0542c688fe66a68c98020aecf31c}} 
+\index{Partition@{Partition}!isSubsetSum@{isSubsetSum}}
+\index{isSubsetSum@{isSubsetSum}!Partition@{Partition}}
+\doxysubsubsection{\texorpdfstring{isSubsetSum()}{isSubsetSum()}}
+{\footnotesize\ttfamily bool Partition\+::is\+Subset\+Sum (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{v,  }\item[{int}]{n,  }\item[{int}]{sum }\end{DoxyParamCaption})}
+
+
+
+Determines if there is a subset of v with sum equal to given sum recursively. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em v} & The vector \\
+\hline
+\mbox{\texttt{ in}}  & {\em n} & The elements ammount \\
+\hline
+\mbox{\texttt{ in}}  & {\em sum} & The sum\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if thete is subset sum, False otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 212 of file Partition.\+cpp.
+
+\mbox{\Hypertarget{class_partition_a96f986581b918e7c4a2c4814886a5631}\label{class_partition_a96f986581b918e7c4a2c4814886a5631}} 
+\index{Partition@{Partition}!set\_Original@{set\_Original}}
+\index{set\_Original@{set\_Original}!Partition@{Partition}}
+\doxysubsubsection{\texorpdfstring{set\_Original()}{set\_Original()}}
+{\footnotesize\ttfamily void Partition\+::set\+\_\+\+Original (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{new\+Original }\end{DoxyParamCaption})}
+
+
+
+Sets the original vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em new\+Original} & The new original vector \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 100 of file Partition.\+cpp.
+
+\mbox{\Hypertarget{class_partition_a30db71090e3ddc3404bf196f819955de}\label{class_partition_a30db71090e3ddc3404bf196f819955de}} 
+\index{Partition@{Partition}!set\_Partitioned@{set\_Partitioned}}
+\index{set\_Partitioned@{set\_Partitioned}!Partition@{Partition}}
+\doxysubsubsection{\texorpdfstring{set\_Partitioned()}{set\_Partitioned()}}
+{\footnotesize\ttfamily void Partition\+::set\+\_\+\+Partitioned (\begin{DoxyParamCaption}\item[{bool}]{new\+Partitioned }\end{DoxyParamCaption})}
+
+
+
+Sets if it\textquotesingle{}s partitioned or not. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em new\+Partitioned} & Indicates the new partitioned flag \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 127 of file Partition.\+cpp.
+
+\mbox{\Hypertarget{class_partition_a2f86aa4800be2c63ff2a48b91525c34e}\label{class_partition_a2f86aa4800be2c63ff2a48b91525c34e}} 
+\index{Partition@{Partition}!set\_V1@{set\_V1}}
+\index{set\_V1@{set\_V1}!Partition@{Partition}}
+\doxysubsubsection{\texorpdfstring{set\_V1()}{set\_V1()}}
+{\footnotesize\ttfamily void Partition\+::set\+\_\+\+V1 (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{new\+V1 }\end{DoxyParamCaption})}
+
+
+
+Sets the solution vector 1. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em new\+V1} & The new solution vector 1 \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 109 of file Partition.\+cpp.
+
+\mbox{\Hypertarget{class_partition_ae8ea5a80362f1863e1265610a6db98cf}\label{class_partition_ae8ea5a80362f1863e1265610a6db98cf}} 
+\index{Partition@{Partition}!set\_V2@{set\_V2}}
+\index{set\_V2@{set\_V2}!Partition@{Partition}}
+\doxysubsubsection{\texorpdfstring{set\_V2()}{set\_V2()}}
+{\footnotesize\ttfamily void Partition\+::set\+\_\+\+V2 (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{new\+V2 }\end{DoxyParamCaption})}
+
+
+
+Sets the solution vector 2. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em new\+V2} & The new solution vector 2 \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 118 of file Partition.\+cpp.
+
+\mbox{\Hypertarget{class_partition_a42c5bde9a4b286b9262193b126e4ab19}\label{class_partition_a42c5bde9a4b286b9262193b126e4ab19}} 
+\index{Partition@{Partition}!sortAndSolve@{sortAndSolve}}
+\index{sortAndSolve@{sortAndSolve}!Partition@{Partition}}
+\doxysubsubsection{\texorpdfstring{sortAndSolve()}{sortAndSolve()}}
+{\footnotesize\ttfamily bool Partition\+::sort\+And\+Solve (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Sorts the vector and solves the partition solution. 
+
+\begin{DoxyReturn}{Returns}
+True if it has solution, false otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 302 of file Partition.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/Partition.\+hpp\item 
+src/Partition.\+cpp\end{DoxyCompactItemize}
