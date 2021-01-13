@@ -1,12 +1,20 @@
 var searchData=
 [
-  ['write_71',['write',['../class_file_handler.html#ad6b5364c518c27724d3d04c3554145c5',1,'FileHandler']]],
-  ['writeblack_72',['writeBlack',['../class_color.html#ab4b0f93349a0f3057a2c0e35f6169a9c',1,'Color']]],
-  ['writeblue_73',['writeBlue',['../class_color.html#ac7374a3e6360882c390552e14965661c',1,'Color']]],
-  ['writecyan_74',['writeCyan',['../class_color.html#a22788bcca23381778a198799b1d5fa6f',1,'Color']]],
-  ['writegreen_75',['writeGreen',['../class_color.html#a657ca2090262c8f0b47c6b2ca7c659dd',1,'Color']]],
-  ['writemagenta_76',['writeMagenta',['../class_color.html#ad8612e7ffb36b62d0b96d6b8ffcaf6e0',1,'Color']]],
-  ['writered_77',['writeRed',['../class_color.html#a74f3ba4671d5b362d6e55301bc1efb74',1,'Color']]],
-  ['writewhite_78',['writeWhite',['../class_color.html#ac4e6e197c7697247e1382956d7237ce5',1,'Color']]],
-  ['writeyellow_79',['writeYellow',['../class_color.html#a0533ebaeb394fb6eb0dcb2d8044fa484',1,'Color']]]
+  ['set_5fendclock_120',['set_EndClock',['../class_chrono.html#a4a6e85106404b14538831dcfe7774d9f',1,'Chrono']]],
+  ['set_5fendtime_121',['set_EndTime',['../class_chrono.html#afbd474501ff81804c5d48c8218e8cf36',1,'Chrono']]],
+  ['set_5ffilename_122',['set_FileName',['../class_file_handler.html#a8ebbda1767f7a52dfa1b4988b5c6d630',1,'FileHandler']]],
+  ['set_5foriginal_123',['set_Original',['../class_partition.html#a96f986581b918e7c4a2c4814886a5631',1,'Partition']]],
+  ['set_5fpartitioned_124',['set_Partitioned',['../class_partition.html#a30db71090e3ddc3404bf196f819955de',1,'Partition']]],
+  ['set_5fstartclock_125',['set_StartClock',['../class_chrono.html#ab5e8b1f97fbdad1449b61cc20e09a862',1,'Chrono']]],
+  ['set_5fstarttime_126',['set_StartTime',['../class_chrono.html#ad58b7fd644a6af1f3a8d117dc7011d55',1,'Chrono']]],
+  ['set_5ftotaltime_127',['set_TotalTime',['../class_chrono.html#a27e8f49ad23b3648d399449657c136da',1,'Chrono']]],
+  ['set_5ftriplets_128',['set_Triplets',['../class_problem3_d_m.html#a062554d42d470676b9af2f697369f92c',1,'Problem3DM']]],
+  ['set_5fv1_129',['set_V1',['../class_partition.html#a2f86aa4800be2c63ff2a48b91525c34e',1,'Partition']]],
+  ['set_5fv2_130',['set_V2',['../class_partition.html#ae8ea5a80362f1863e1265610a6db98cf',1,'Partition']]],
+  ['set_5fx_131',['set_X',['../class_problem3_d_m.html#acad652abaf56cad765375432d41fed09',1,'Problem3DM::set_X()'],['../class_triplet.html#ad136b190802b0687b89540c26b2da6d3',1,'Triplet::set_X()']]],
+  ['set_5fy_132',['set_Y',['../class_problem3_d_m.html#a2cf5993802f45f3e06be68233fc7b442',1,'Problem3DM::set_Y()'],['../class_triplet.html#add61f1de8958192e42816372c368b0d2',1,'Triplet::set_Y()']]],
+  ['set_5fz_133',['set_Z',['../class_problem3_d_m.html#a99d2e39bcf68feabcaca018945b79b46',1,'Problem3DM::set_Z()'],['../class_triplet.html#a6c9b16dad15eb49ea23a1c527e8eb6de',1,'Triplet::set_Z()']]],
+  ['sortandsolve_134',['sortAndSolve',['../class_partition.html#a42c5bde9a4b286b9262193b126e4ab19',1,'Partition']]],
+  ['startchrono_135',['startChrono',['../class_chrono.html#acf9ab5d376fe0f29b86ec3bcc75a0420',1,'Chrono']]],
+  ['stopchrono_136',['stopChrono',['../class_chrono.html#a8220ee5d73f0be9696f4167ada8754d1',1,'Chrono']]]
 ];

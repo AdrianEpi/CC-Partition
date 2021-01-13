@@ -24,18 +24,17 @@ std\+::string \mbox{\hyperlink{class_file_handler_acb58be59e41fa5f54cbc85f7a6eb4
 \begin{DoxyCompactList}\small\item\em Gets the file name. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_file_handler_a8ebbda1767f7a52dfa1b4988b5c6d630}{set\+\_\+\+File\+Name}} (std\+::string new\+File\+Name)
 \begin{DoxyCompactList}\small\item\em Sets the file name. \end{DoxyCompactList}\item 
-std\+::vector$<$ int $>$ \mbox{\hyperlink{class_file_handler_aaf48a4d6eb2fa6b3c70b4ecb8ae5e9cb}{read}} (std\+::string file\+Name)
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_file_handler_abed3452739152f3fdf3e59696dadac43}{read\+Normal}} (std\+::string file\+Name)
 \begin{DoxyCompactList}\small\item\em Reads the numbers from file and stores them in a vector. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_file_handler_a78745cb2b87e34e99cc4e89b915b74c0}\label{class_file_handler_a78745cb2b87e34e99cc4e89b915b74c0}} 
+std\+::pair$<$ std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $>$, std\+::vector$<$ \mbox{\hyperlink{class_triplet}{Triplet}} $>$ $>$ {\bfseries read3\+DM} (std\+::string file\+Name)
+\item 
 std\+::ostream \& \mbox{\hyperlink{class_file_handler_ad6b5364c518c27724d3d04c3554145c5}{write}} (std\+::ostream \&os, \mbox{\hyperlink{class_partition}{Partition}} \&partition)
 \begin{DoxyCompactList}\small\item\em Saves the partition solution in file. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 This class describes a file handler, it reads and writes data into files. 
-
-Definition at line 40 of file File\+Handler.\+hpp.
-
-
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_file_handler_a5fcb0a246466b69e8b8bf3d3cb685fbc}\label{class_file_handler_a5fcb0a246466b69e8b8bf3d3cb685fbc}} 
@@ -55,10 +54,6 @@ Constructs a new instance.
 \end{DoxyParams}
 
 
-Definition at line 50 of file File\+Handler.\+cpp.
-
-
-
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_file_handler_acb58be59e41fa5f54cbc85f7a6eb4366}\label{class_file_handler_acb58be59e41fa5f54cbc85f7a6eb4366}} 
 \index{FileHandler@{FileHandler}!get\_FileName@{get\_FileName}}
@@ -73,15 +68,11 @@ Gets the file name.
 \begin{DoxyReturn}{Returns}
 The file name. 
 \end{DoxyReturn}
-
-
-Definition at line 65 of file File\+Handler.\+cpp.
-
-\mbox{\Hypertarget{class_file_handler_aaf48a4d6eb2fa6b3c70b4ecb8ae5e9cb}\label{class_file_handler_aaf48a4d6eb2fa6b3c70b4ecb8ae5e9cb}} 
-\index{FileHandler@{FileHandler}!read@{read}}
-\index{read@{read}!FileHandler@{FileHandler}}
-\doxysubsubsection{\texorpdfstring{read()}{read()}}
-{\footnotesize\ttfamily std\+::vector$<$ int $>$ File\+Handler\+::read (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_file_handler_abed3452739152f3fdf3e59696dadac43}\label{class_file_handler_abed3452739152f3fdf3e59696dadac43}} 
+\index{FileHandler@{FileHandler}!readNormal@{readNormal}}
+\index{readNormal@{readNormal}!FileHandler@{FileHandler}}
+\doxysubsubsection{\texorpdfstring{readNormal()}{readNormal()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ File\+Handler\+::read\+Normal (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})}
 
 
 
@@ -95,10 +86,6 @@ Reads the numbers from file and stores them in a vector.
 \begin{DoxyReturn}{Returns}
 The vector with the numbers 
 \end{DoxyReturn}
-
-
-Definition at line 85 of file File\+Handler.\+cpp.
-
 \mbox{\Hypertarget{class_file_handler_a8ebbda1767f7a52dfa1b4988b5c6d630}\label{class_file_handler_a8ebbda1767f7a52dfa1b4988b5c6d630}} 
 \index{FileHandler@{FileHandler}!set\_FileName@{set\_FileName}}
 \index{set\_FileName@{set\_FileName}!FileHandler@{FileHandler}}
@@ -114,10 +101,6 @@ Sets the file name.
 \mbox{\texttt{ in}}  & {\em new\+File\+Name} & The new file name \\
 \hline
 \end{DoxyParams}
-
-
-Definition at line 74 of file File\+Handler.\+cpp.
-
 \mbox{\Hypertarget{class_file_handler_ad6b5364c518c27724d3d04c3554145c5}\label{class_file_handler_ad6b5364c518c27724d3d04c3554145c5}} 
 \index{FileHandler@{FileHandler}!write@{write}}
 \index{write@{write}!FileHandler@{FileHandler}}
@@ -138,10 +121,6 @@ Saves the partition solution in file.
 \begin{DoxyReturn}{Returns}
 The output stream 
 \end{DoxyReturn}
-
-
-Definition at line 114 of file File\+Handler.\+cpp.
-
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

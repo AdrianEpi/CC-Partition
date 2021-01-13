@@ -22,9 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CC-Partition
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.3</span>
    </div>
-   <div id="projectbrief">Partition problem</div>
   </td>
  </tr>
  </tbody>
@@ -97,46 +96,48 @@ $(function() {
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#pragma once </span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;Color.hpp&quot;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;Partition.hpp&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/*------------------------------------------------*/</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">/*------------------  LIBRARIES  -----------------*/</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">/*------------------------------------------------*/</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_file_handler.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_file_handler.html">FileHandler</a> {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="comment">// Attributes</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        std::string fileName_;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="comment">// Builders &amp; Destroyer</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="class_file_handler.html#a68feb01d7830f302937f29941bf83932">FileHandler</a> (<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="class_file_handler.html#a68feb01d7830f302937f29941bf83932">FileHandler</a> (std::string fileName);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="class_file_handler.html#a5331b114286ee07a565784f7fb366b46">~FileHandler</a> (<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">// Getter &amp; Setter</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        std::string <a class="code" href="class_file_handler.html#acb58be59e41fa5f54cbc85f7a6eb4366">get_FileName</a> (<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_file_handler.html#a8ebbda1767f7a52dfa1b4988b5c6d630">set_FileName</a> (std::string newFileName);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment">// Methods</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        std::vector&lt;int&gt; <a class="code" href="class_file_handler.html#aaf48a4d6eb2fa6b3c70b4ecb8ae5e9cb">read</a> (std::string fileName);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        std::ostream&amp; <a class="code" href="class_file_handler.html#ad6b5364c518c27724d3d04c3554145c5">write</a> (std::ostream&amp; os, <a class="code" href="class_partition.html">Partition</a>&amp; partition);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;triplet.hpp&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">/*------------------------------------------------*/</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">/*------------------  LIBRARIES  -----------------*/</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/*------------------------------------------------*/</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_file_handler.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_file_handler.html">FileHandler</a> {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="comment">// Attributes</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        std::string fileName_;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="comment">// Builders &amp; Destroyer</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="class_file_handler.html#a68feb01d7830f302937f29941bf83932">FileHandler</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="class_file_handler.html#a68feb01d7830f302937f29941bf83932">FileHandler</a> (std::string fileName);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="class_file_handler.html#a5331b114286ee07a565784f7fb366b46">~FileHandler</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="comment">// Getter &amp; Setter</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        std::string <a class="code" href="class_file_handler.html#acb58be59e41fa5f54cbc85f7a6eb4366">get_FileName</a> (<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_file_handler.html#a8ebbda1767f7a52dfa1b4988b5c6d630">set_FileName</a> (std::string newFileName);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="comment">// Methods</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        std::vector&lt;int&gt; <a class="code" href="class_file_handler.html#abed3452739152f3fdf3e59696dadac43">readNormal</a> (std::string fileName);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        std::pair&lt;std::vector&lt;std::vector&lt;std::string&gt;&gt;, std::vector&lt;Triplet&gt;&gt; read3DM (std::string fileName);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        std::ostream&amp; <a class="code" href="class_file_handler.html#ad6b5364c518c27724d3d04c3554145c5">write</a> (std::ostream&amp; os, <a class="code" href="class_partition.html">Partition</a>&amp; partition);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_file_handler_html_a68feb01d7830f302937f29941bf83932"><div class="ttname"><a href="class_file_handler.html#a68feb01d7830f302937f29941bf83932">FileHandler::FileHandler</a></div><div class="ttdeci">FileHandler(void)</div><div class="ttdoc">Constructs a new instance.</div><div class="ttdef"><b>Definition:</b> <a href="_file_handler_8cpp_source.html#l00041">FileHandler.cpp:41</a></div></div>
-<div class="ttc" id="aclass_file_handler_html_aaf48a4d6eb2fa6b3c70b4ecb8ae5e9cb"><div class="ttname"><a href="class_file_handler.html#aaf48a4d6eb2fa6b3c70b4ecb8ae5e9cb">FileHandler::read</a></div><div class="ttdeci">std::vector&lt; int &gt; read(std::string fileName)</div><div class="ttdoc">Reads the numbers from file and stores them in a vector.</div><div class="ttdef"><b>Definition:</b> <a href="_file_handler_8cpp_source.html#l00085">FileHandler.cpp:85</a></div></div>
-<div class="ttc" id="aclass_file_handler_html_a8ebbda1767f7a52dfa1b4988b5c6d630"><div class="ttname"><a href="class_file_handler.html#a8ebbda1767f7a52dfa1b4988b5c6d630">FileHandler::set_FileName</a></div><div class="ttdeci">void set_FileName(std::string newFileName)</div><div class="ttdoc">Sets the file name.</div><div class="ttdef"><b>Definition:</b> <a href="_file_handler_8cpp_source.html#l00074">FileHandler.cpp:74</a></div></div>
-<div class="ttc" id="aclass_file_handler_html_a5331b114286ee07a565784f7fb366b46"><div class="ttname"><a href="class_file_handler.html#a5331b114286ee07a565784f7fb366b46">FileHandler::~FileHandler</a></div><div class="ttdeci">~FileHandler(void)</div><div class="ttdoc">Destroys the object.</div><div class="ttdef"><b>Definition:</b> <a href="_file_handler_8cpp_source.html#l00057">FileHandler.cpp:57</a></div></div>
-<div class="ttc" id="aclass_partition_html"><div class="ttname"><a href="class_partition.html">Partition</a></div><div class="ttdoc">This class describes the partition problem.</div><div class="ttdef"><b>Definition:</b> <a href="_partition_8hpp_source.html#l00040">Partition.hpp:40</a></div></div>
-<div class="ttc" id="aclass_file_handler_html_ad6b5364c518c27724d3d04c3554145c5"><div class="ttname"><a href="class_file_handler.html#ad6b5364c518c27724d3d04c3554145c5">FileHandler::write</a></div><div class="ttdeci">std::ostream &amp; write(std::ostream &amp;os, Partition &amp;partition)</div><div class="ttdoc">Saves the partition solution in file.</div><div class="ttdef"><b>Definition:</b> <a href="_file_handler_8cpp_source.html#l00114">FileHandler.cpp:114</a></div></div>
-<div class="ttc" id="aclass_file_handler_html"><div class="ttname"><a href="class_file_handler.html">FileHandler</a></div><div class="ttdoc">This class describes a file handler, it reads and writes data into files.</div><div class="ttdef"><b>Definition:</b> <a href="_file_handler_8hpp_source.html#l00040">FileHandler.hpp:40</a></div></div>
-<div class="ttc" id="aclass_file_handler_html_acb58be59e41fa5f54cbc85f7a6eb4366"><div class="ttname"><a href="class_file_handler.html#acb58be59e41fa5f54cbc85f7a6eb4366">FileHandler::get_FileName</a></div><div class="ttdeci">std::string get_FileName(void) const</div><div class="ttdoc">Gets the file name.</div><div class="ttdef"><b>Definition:</b> <a href="_file_handler_8cpp_source.html#l00065">FileHandler.cpp:65</a></div></div>
+<div class="ttc" id="aclass_file_handler_html_a68feb01d7830f302937f29941bf83932"><div class="ttname"><a href="class_file_handler.html#a68feb01d7830f302937f29941bf83932">FileHandler::FileHandler</a></div><div class="ttdeci">FileHandler(void)</div><div class="ttdoc">Constructs a new instance.</div><div class="ttdef"><b>Definition:</b> FileHandler.cpp:41</div></div>
+<div class="ttc" id="aclass_file_handler_html_abed3452739152f3fdf3e59696dadac43"><div class="ttname"><a href="class_file_handler.html#abed3452739152f3fdf3e59696dadac43">FileHandler::readNormal</a></div><div class="ttdeci">std::vector&lt; int &gt; readNormal(std::string fileName)</div><div class="ttdoc">Reads the numbers from file and stores them in a vector.</div><div class="ttdef"><b>Definition:</b> FileHandler.cpp:85</div></div>
+<div class="ttc" id="aclass_file_handler_html_a8ebbda1767f7a52dfa1b4988b5c6d630"><div class="ttname"><a href="class_file_handler.html#a8ebbda1767f7a52dfa1b4988b5c6d630">FileHandler::set_FileName</a></div><div class="ttdeci">void set_FileName(std::string newFileName)</div><div class="ttdoc">Sets the file name.</div><div class="ttdef"><b>Definition:</b> FileHandler.cpp:74</div></div>
+<div class="ttc" id="aclass_file_handler_html_a5331b114286ee07a565784f7fb366b46"><div class="ttname"><a href="class_file_handler.html#a5331b114286ee07a565784f7fb366b46">FileHandler::~FileHandler</a></div><div class="ttdeci">~FileHandler(void)</div><div class="ttdoc">Destroys the object.</div><div class="ttdef"><b>Definition:</b> FileHandler.cpp:57</div></div>
+<div class="ttc" id="aclass_partition_html"><div class="ttname"><a href="class_partition.html">Partition</a></div><div class="ttdoc">This class describes the partition problem.</div><div class="ttdef"><b>Definition:</b> Partition.hpp:40</div></div>
+<div class="ttc" id="aclass_file_handler_html_ad6b5364c518c27724d3d04c3554145c5"><div class="ttname"><a href="class_file_handler.html#ad6b5364c518c27724d3d04c3554145c5">FileHandler::write</a></div><div class="ttdeci">std::ostream &amp; write(std::ostream &amp;os, Partition &amp;partition)</div><div class="ttdoc">Saves the partition solution in file.</div><div class="ttdef"><b>Definition:</b> FileHandler.cpp:144</div></div>
+<div class="ttc" id="aclass_file_handler_html"><div class="ttname"><a href="class_file_handler.html">FileHandler</a></div><div class="ttdoc">This class describes a file handler, it reads and writes data into files.</div><div class="ttdef"><b>Definition:</b> FileHandler.hpp:41</div></div>
+<div class="ttc" id="aclass_file_handler_html_acb58be59e41fa5f54cbc85f7a6eb4366"><div class="ttname"><a href="class_file_handler.html#acb58be59e41fa5f54cbc85f7a6eb4366">FileHandler::get_FileName</a></div><div class="ttdeci">std::string get_FileName(void) const</div><div class="ttdoc">Gets the file name.</div><div class="ttdef"><b>Definition:</b> FileHandler.cpp:65</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -24,6 +24,7 @@
 #pragma once 
 #include "Color.hpp"
 #include "Partition.hpp"
+#include "triplet.hpp"
 
 /*------------------------------------------------*/
 /*------------------  LIBRARIES  -----------------*/
@@ -54,7 +55,8 @@ class FileHandler {
         void set_FileName (std::string newFileName);
 
         // Methods
-        std::vector<int> read (std::string fileName);
+        std::vector<int> readNormal (std::string fileName);
+        std::pair<std::vector<std::vector<std::string>>, std::vector<Triplet>> read3DM (std::string fileName);
         std::ostream& write (std::ostream& os, Partition& partition);
 
 };

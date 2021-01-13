@@ -26,16 +26,44 @@
  * 		   Adrian Epifanio Rodríguez
 * @Date:   2020-12-24 09:01:33
 * @Last Modified by:   Adrian Epifanio
-* @Last Modified time: 2021-01-07 10:03:08
+* @Last Modified time: 2021-01-13 13:50:18
 */
+/*------------------  FUNCTIONS  -----------------*/
 
 #include "../include/FileHandler.hpp"
+#include "../include/Chrono.hpp"
+#include "../include/3dm.hpp"
 
+/*------------------------------------------------*/
+
+
+/**
+ * @brief      Main function
+ *
+ * @return     0 if program finished correctly.
+ */
 int main (void) {
+    // Normal partition input
+    Chrono timer;
 	FileHandler newFile;
-	std::vector<int> v = newFile.read("../inputs/example.txt");
+	std::vector<int> v = newFile.readNormal("../inputs/example.txt");
 	Partition newPartition(v);
+    timer.startChrono();
 	newPartition.set_Partitioned(newPartition.sortAndSolve());
-	//newFile.write(std::cout, newPartition);
-	newPartition.printByConsole();
+	timer.stopChrono();
+    newPartition.printByConsole();
+    std::cout << std::endl << "Elapsed time: " << timer.get_MilliSeconds(7) << " milli-seconds." << std::endl;
+    
+    // 3DM partition input
+    Chrono timer2;
+    FileHandler file("../inputs/example3dm.3dm");
+    Problem3DM problem3dm(file);
+    timer2.startChrono();
+    Partition newPartition2(problem3dm.transformToPartition());
+    newPartition2.set_Partitioned(newPartition2.sortAndSolve());
+    timer2.stopChrono();
+    newPartition2.printByConsole();
+    std::cout << std::endl << "Elapsed time: " << timer2.get_MilliSeconds(7) << " milli-seconds." << std::endl;
+
+    return 0;
 }

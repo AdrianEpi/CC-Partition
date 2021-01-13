@@ -1,7 +1,7 @@
 # Variables
 TIME =$(LOGPATH)$(shell date)
 # Variable objetos
-OBJECTS = main.o Partition.o FileHandler.o
+OBJECTS = main.o Partition.o FileHandler.o Chrono.o triplet.o 3dm.o
 # Flags de compilacion
 CFLAGS = -c -std=c++17 -Wall
 
@@ -17,6 +17,15 @@ Partition.o: ../src/Partition.cpp ../include/Partition.hpp
 
 FileHandler.o: ../src/FileHandler.cpp ../include/FileHandler.hpp
 	g++ $(CFLAGS) ../src/FileHandler.cpp
+
+Chrono.o: ../src/Chrono.cpp ../include/Chrono.hpp
+	g++ $(CFLAGS) ../src/Chrono.cpp
+
+triplet.o: ../src/triplet.cpp ../include/triplet.hpp
+	g++ $(CFLAGS) ../src/triplet.cpp
+
+3dm.o: ../src/3dm.cpp ../include/3dm.hpp
+	g++ $(CFLAGS) ../src/3dm.cpp
 
 
 .PHONY: clean

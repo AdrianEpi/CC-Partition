@@ -1,0 +1,195 @@
+\hypertarget{class_problem3_d_m}{}\doxysection{Problem3\+DM Class Reference}
+\label{class_problem3_d_m}\index{Problem3DM@{Problem3DM}}
+
+
+This class describes a 3DM problem.  
+
+
+
+
+{\ttfamily \#include $<$3dm.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_problem3_d_m_a01bdceb75b811f04a5c9a4e2ea714ad5}\label{class_problem3_d_m_a01bdceb75b811f04a5c9a4e2ea714ad5}} 
+\mbox{\hyperlink{class_problem3_d_m_a01bdceb75b811f04a5c9a4e2ea714ad5}{Problem3\+DM}} (void)
+\begin{DoxyCompactList}\small\item\em Constructs a new instance. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_problem3_d_m_a64a35fd68ec0c0be0f1a78c3ccbb3136}{Problem3\+DM}} (\mbox{\hyperlink{class_file_handler}{File\+Handler}} file)
+\begin{DoxyCompactList}\small\item\em Constructs a new instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_problem3_d_m_a4996ead3fc1d9f13b4025176bd9967de}\label{class_problem3_d_m_a4996ead3fc1d9f13b4025176bd9967de}} 
+\mbox{\hyperlink{class_problem3_d_m_a4996ead3fc1d9f13b4025176bd9967de}{$\sim$\+Problem3\+DM}} (void)
+\begin{DoxyCompactList}\small\item\em Destroys the object. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_problem3_d_m_a98d6a72c382958de003b8fda18b9cbb1}{get\+\_\+X}} (void) const
+\begin{DoxyCompactList}\small\item\em Gets the x. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_problem3_d_m_a1c5796c32639aa64aadce61acf1d8210}{get\+\_\+Y}} (void) const
+\begin{DoxyCompactList}\small\item\em Gets the y. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_problem3_d_m_ac691b39c83c96e880fa8b9a6dc483ab3}{get\+\_\+Z}} (void) const
+\begin{DoxyCompactList}\small\item\em Gets the z. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_triplet}{Triplet}} $>$ \mbox{\hyperlink{class_problem3_d_m_a6b2c679c2fec772ff94fb5a65615a2d6}{get\+\_\+\+Triplets}} (void) const
+\begin{DoxyCompactList}\small\item\em Gets the triplets. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_problem3_d_m_acad652abaf56cad765375432d41fed09}{set\+\_\+X}} (std\+::vector$<$ std\+::string $>$ newX)
+\begin{DoxyCompactList}\small\item\em Sets the x. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_problem3_d_m_a2cf5993802f45f3e06be68233fc7b442}{set\+\_\+Y}} (std\+::vector$<$ std\+::string $>$ newY)
+\begin{DoxyCompactList}\small\item\em Sets the y. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_problem3_d_m_a99d2e39bcf68feabcaca018945b79b46}{set\+\_\+Z}} (std\+::vector$<$ std\+::string $>$ newZ)
+\begin{DoxyCompactList}\small\item\em Sets the z. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_problem3_d_m_a062554d42d470676b9af2f697369f92c}{set\+\_\+\+Triplets}} (std\+::vector$<$ \mbox{\hyperlink{class_triplet}{Triplet}} $>$ new\+Triplets)
+\begin{DoxyCompactList}\small\item\em Sets the triplets. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_problem3_d_m_a243ca1ba45f9cfd54cbf5bc7720a4f01}{transform\+To\+Partition}} (void)
+\begin{DoxyCompactList}\small\item\em Transform the 3DM problem solution into partition input data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class describes a 3DM problem. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_problem3_d_m_a64a35fd68ec0c0be0f1a78c3ccbb3136}\label{class_problem3_d_m_a64a35fd68ec0c0be0f1a78c3ccbb3136}} 
+\index{Problem3DM@{Problem3DM}!Problem3DM@{Problem3DM}}
+\index{Problem3DM@{Problem3DM}!Problem3DM@{Problem3DM}}
+\doxysubsubsection{\texorpdfstring{Problem3DM()}{Problem3DM()}}
+{\footnotesize\ttfamily Problem3\+D\+M\+::\+Problem3\+DM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_file_handler}{File\+Handler}}}]{file }\end{DoxyParamCaption})}
+
+
+
+Constructs a new instance. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em file} & The file \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_problem3_d_m_a6b2c679c2fec772ff94fb5a65615a2d6}\label{class_problem3_d_m_a6b2c679c2fec772ff94fb5a65615a2d6}} 
+\index{Problem3DM@{Problem3DM}!get\_Triplets@{get\_Triplets}}
+\index{get\_Triplets@{get\_Triplets}!Problem3DM@{Problem3DM}}
+\doxysubsubsection{\texorpdfstring{get\_Triplets()}{get\_Triplets()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_triplet}{Triplet}} $>$ Problem3\+D\+M\+::get\+\_\+\+Triplets (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the triplets. 
+
+\begin{DoxyReturn}{Returns}
+The triplets. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_problem3_d_m_a98d6a72c382958de003b8fda18b9cbb1}\label{class_problem3_d_m_a98d6a72c382958de003b8fda18b9cbb1}} 
+\index{Problem3DM@{Problem3DM}!get\_X@{get\_X}}
+\index{get\_X@{get\_X}!Problem3DM@{Problem3DM}}
+\doxysubsubsection{\texorpdfstring{get\_X()}{get\_X()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Problem3\+D\+M\+::get\+\_\+X (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the x. 
+
+\begin{DoxyReturn}{Returns}
+The x. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_problem3_d_m_a1c5796c32639aa64aadce61acf1d8210}\label{class_problem3_d_m_a1c5796c32639aa64aadce61acf1d8210}} 
+\index{Problem3DM@{Problem3DM}!get\_Y@{get\_Y}}
+\index{get\_Y@{get\_Y}!Problem3DM@{Problem3DM}}
+\doxysubsubsection{\texorpdfstring{get\_Y()}{get\_Y()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Problem3\+D\+M\+::get\+\_\+Y (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the y. 
+
+\begin{DoxyReturn}{Returns}
+The y. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_problem3_d_m_ac691b39c83c96e880fa8b9a6dc483ab3}\label{class_problem3_d_m_ac691b39c83c96e880fa8b9a6dc483ab3}} 
+\index{Problem3DM@{Problem3DM}!get\_Z@{get\_Z}}
+\index{get\_Z@{get\_Z}!Problem3DM@{Problem3DM}}
+\doxysubsubsection{\texorpdfstring{get\_Z()}{get\_Z()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Problem3\+D\+M\+::get\+\_\+Z (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the z. 
+
+\begin{DoxyReturn}{Returns}
+The z. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_problem3_d_m_a062554d42d470676b9af2f697369f92c}\label{class_problem3_d_m_a062554d42d470676b9af2f697369f92c}} 
+\index{Problem3DM@{Problem3DM}!set\_Triplets@{set\_Triplets}}
+\index{set\_Triplets@{set\_Triplets}!Problem3DM@{Problem3DM}}
+\doxysubsubsection{\texorpdfstring{set\_Triplets()}{set\_Triplets()}}
+{\footnotesize\ttfamily void Problem3\+D\+M\+::set\+\_\+\+Triplets (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_triplet}{Triplet}} $>$}]{new\+Triplets }\end{DoxyParamCaption})}
+
+
+
+Sets the triplets. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em new\+Triplets} & The new triplets \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_problem3_d_m_acad652abaf56cad765375432d41fed09}\label{class_problem3_d_m_acad652abaf56cad765375432d41fed09}} 
+\index{Problem3DM@{Problem3DM}!set\_X@{set\_X}}
+\index{set\_X@{set\_X}!Problem3DM@{Problem3DM}}
+\doxysubsubsection{\texorpdfstring{set\_X()}{set\_X()}}
+{\footnotesize\ttfamily void Problem3\+D\+M\+::set\+\_\+X (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{newX }\end{DoxyParamCaption})}
+
+
+
+Sets the x. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em newX} & The new x \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_problem3_d_m_a2cf5993802f45f3e06be68233fc7b442}\label{class_problem3_d_m_a2cf5993802f45f3e06be68233fc7b442}} 
+\index{Problem3DM@{Problem3DM}!set\_Y@{set\_Y}}
+\index{set\_Y@{set\_Y}!Problem3DM@{Problem3DM}}
+\doxysubsubsection{\texorpdfstring{set\_Y()}{set\_Y()}}
+{\footnotesize\ttfamily void Problem3\+D\+M\+::set\+\_\+Y (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{newY }\end{DoxyParamCaption})}
+
+
+
+Sets the y. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em newY} & The new y \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_problem3_d_m_a99d2e39bcf68feabcaca018945b79b46}\label{class_problem3_d_m_a99d2e39bcf68feabcaca018945b79b46}} 
+\index{Problem3DM@{Problem3DM}!set\_Z@{set\_Z}}
+\index{set\_Z@{set\_Z}!Problem3DM@{Problem3DM}}
+\doxysubsubsection{\texorpdfstring{set\_Z()}{set\_Z()}}
+{\footnotesize\ttfamily void Problem3\+D\+M\+::set\+\_\+Z (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{newZ }\end{DoxyParamCaption})}
+
+
+
+Sets the z. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em newZ} & The new z \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_problem3_d_m_a243ca1ba45f9cfd54cbf5bc7720a4f01}\label{class_problem3_d_m_a243ca1ba45f9cfd54cbf5bc7720a4f01}} 
+\index{Problem3DM@{Problem3DM}!transformToPartition@{transformToPartition}}
+\index{transformToPartition@{transformToPartition}!Problem3DM@{Problem3DM}}
+\doxysubsubsection{\texorpdfstring{transformToPartition()}{transformToPartition()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Problem3\+D\+M\+::transform\+To\+Partition (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Transform the 3DM problem solution into partition input data. 
+
+\begin{DoxyReturn}{Returns}
+The partition input data 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/3dm.\+hpp\item 
+src/3dm.\+cpp\end{DoxyCompactItemize}

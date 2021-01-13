@@ -26,7 +26,7 @@
  * 		   Adrian Epifanio Rodríguez
 * @Date:   2020-12-24 09:02:04
 * @Last Modified by:   Adrian Epifanio
-* @Last Modified time: 2021-01-07 10:08:01
+* @Last Modified time: 2021-01-13 13:01:58
 */
 /*------------------  FUNCTIONS  -----------------*/
 
@@ -82,7 +82,7 @@ void FileHandler::set_FileName (std::string newFileName) {
  *
  * @return     The vector with the numbers
  */
-std::vector<int> FileHandler::read (std::string fileName) {
+std::vector<int> FileHandler::readNormal (std::string fileName) {
 	std::ifstream input(fileName, std::ios::in);
 	std::vector<int> originalVector;
 	if (input.fail()) {
@@ -101,6 +101,36 @@ std::vector<int> FileHandler::read (std::string fileName) {
 		input.close();
 	}
 	return originalVector;
+}
+
+std::pair<std::vector<std::vector<std::string>>, std::vector<Triplet>> FileHandler::read3DM (std::string fileName) {
+	std::ifstream input(fileName, std::ios::in);
+	std::vector<int> originalVector;
+	std::pair<std::vector<std::vector<std::string>>, std::vector<Triplet>> sol;
+	if (input.fail()) {
+		std::cout << std::endl << Color::writeRed("Error, couldn't open read 3dm file.") << std::endl;
+		exit(1);
+	}
+	else {
+		sol.first.resize(3);
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j < 3; j++) {
+				std::string reader = "";
+				input >> reader;
+				sol.first[i].push_back(reader);
+			}
+		}
+		while (!input.eof()) {
+			std::string x = "", y = "", z = "";
+			input >> x;
+			if (x != ",") {
+				input >> y >> z;
+				Triplet newTriplet(x, y, z);
+				sol.second.push_back(newTriplet);
+			}
+		}
+	}
+	return sol;
 }
 
 /**

@@ -26,13 +26,14 @@
  * 		   Adrian Epifanio Rodríguez
 * @Date:   2020-12-24 09:02:38
 * @Last Modified by:   Adrian Epifanio
-* @Last Modified time: 2021-01-07 10:14:07
+* @Last Modified time: 2021-01-13 13:45:06
 */
 /*------------------  FUNCTIONS  -----------------*/
 
 #include "../include/Partition.hpp"
 
 /*------------------------------------------------*/
+
 /**
  * @brief      Constructs a new instance.
  */
@@ -182,6 +183,11 @@ void Partition::printByConsole (void) {
     }
     else {
         std::cout << std::endl << "Sorry, there is not solution to the partition problem with that imput data." << std::endl;
+        std::cout << std::endl <<"Origial vector: [ ";
+        for (unsigned i = 0; i < original_.size() - 1; i++) {
+            std::cout << original_[i] << ", ";
+        }
+        std::cout << original_[original_.size() - 1] << " ]" << std::endl;
     }
 }
 
@@ -326,9 +332,6 @@ bool Partition::findSolution (std::vector<int> v1, std::vector<int> v2, unsigned
         return false;
     }
     else {
-        if (calculateSum(v1) > sum_ || calculateSum(v2) > sum_) {
-            return false;
-        }
         std::vector<int> vv1 = v1;
         vv1.push_back(original_[n]);
         std::vector<int> vv2 = v2;
