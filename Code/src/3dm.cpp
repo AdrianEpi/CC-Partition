@@ -26,7 +26,7 @@
  * 		   Adrian Epifanio Rodríguez
 * @Date:   2020-12-27 12:02:38
 * @Last Modified by:   Adrian Epifanio
-* @Last Modified time: 2021-01-13 13:36:43
+* @Last Modified time: 2021-01-13 19:47:11
 */
 /*------------------  FUNCTIONS  -----------------*/
 
@@ -155,13 +155,48 @@ std::vector<int> Problem3DM::transformToPartition (void) {
 		}
 		for (unsigned j = 0; j < get_Triplets()[i].get_Y().length(); j++) {
 			int tmp = get_Triplets()[i].get_Y()[j];
+			tmp *= 100;
 			sum += tmp;
 		}
 		for (unsigned j = 0; j < get_Triplets()[i].get_Z().length(); j++) {
 			int tmp = get_Triplets()[i].get_Z()[j];
+			if (tmp < 0) {
+				tmp *= -1;
+			}
+			tmp *= 10000;
 			sum += tmp;
 		}
 		sol.push_back(sum);
 	}
 	return sol;
+}
+
+/**
+ * @brief      Prints a data.
+ */
+void Problem3DM::printData (void) {
+	std::cout << std::endl << "3DM Data: " << std::endl;
+	std::cout << "\t Vector X: { ";
+	for (unsigned i = 0; i < x_.size() - 1; i++) {
+		std::cout << x_[i] << ", ";
+	}
+	std::cout << x_[x_.size() - 1] << " }" << std::endl;
+
+	std::cout << "\t Vector Y: { ";
+	for (unsigned i = 0; i < y_.size() - 1; i++) {
+		std::cout << y_[i] << ", ";
+	}
+	std::cout << y_[y_.size() - 1] << " }" << std::endl;
+
+	std::cout << "\t Vector Z: { ";
+	for (unsigned i = 0; i < z_.size() - 1; i++) {
+		std::cout << z_[i] << ", ";
+	}
+	std::cout << z_[z_.size() - 1] << " }" << std::endl;
+
+	std::cout << "\t Triplets: [ ";
+	for (unsigned i = 0; i < triplets_.size(); i++) {
+		std::cout << "{ " << triplets_[i].get_X() << ", " << triplets_[i].get_Y() << ", " << triplets_[i].get_Z() << " } ";
+	}
+	std::cout << " ]";
 }

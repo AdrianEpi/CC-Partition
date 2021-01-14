@@ -26,7 +26,7 @@
  * 		   Adrian Epifanio Rodríguez
 * @Date:   2020-12-24 09:01:33
 * @Last Modified by:   Adrian Epifanio
-* @Last Modified time: 2021-01-13 13:50:18
+* @Last Modified time: 2021-01-13 15:12:25
 */
 /*------------------  FUNCTIONS  -----------------*/
 
@@ -63,7 +63,8 @@ int main (void) {
     newPartition2.set_Partitioned(newPartition2.sortAndSolve());
     timer2.stopChrono();
     newPartition2.printByConsole();
-    std::cout << std::endl << "Elapsed time: " << timer2.get_MilliSeconds(7) << " milli-seconds." << std::endl;
+    problem3dm.printData();
+    std::cout << std::endl << std::endl << "Elapsed time: " << timer2.get_MilliSeconds(7) << " milli-seconds." << std::endl;
 
     return 0;
 }

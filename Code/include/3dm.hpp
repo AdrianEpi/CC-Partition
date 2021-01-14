@@ -65,5 +65,6 @@ class Problem3DM {
 
         // Methods
         std::vector<int> transformToPartition (void);
+        void printData (void);
 
 };

@@ -26,7 +26,7 @@
  * 		   Adrian Epifanio Rodríguez
 * @Date:   2020-12-24 09:02:38
 * @Last Modified by:   Adrian Epifanio
-* @Last Modified time: 2021-01-13 13:45:06
+* @Last Modified time: 2021-01-13 15:13:16
 */
 /*------------------  FUNCTIONS  -----------------*/
 
@@ -182,12 +182,12 @@ void Partition::printByConsole (void) {
         std::cout << finalV2 << " }" << std::endl << std::endl;
     }
     else {
-        std::cout << std::endl << "Sorry, there is not solution to the partition problem with that imput data." << std::endl;
         std::cout << std::endl <<"Origial vector: [ ";
         for (unsigned i = 0; i < original_.size() - 1; i++) {
             std::cout << original_[i] << ", ";
         }
         std::cout << original_[original_.size() - 1] << " ]" << std::endl;
+        std::cout << std::endl << "Sorry, there is not solution to the partition problem with that imput data." << std::endl;
     }
 }
 

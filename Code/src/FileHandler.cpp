@@ -26,7 +26,7 @@
  * 		   Adrian Epifanio Rodríguez
 * @Date:   2020-12-24 09:02:04
 * @Last Modified by:   Adrian Epifanio
-* @Last Modified time: 2021-01-13 13:01:58
+* @Last Modified time: 2021-01-13 15:02:54
 */
 /*------------------  FUNCTIONS  -----------------*/
 
@@ -124,7 +124,11 @@ std::pair<std::vector<std::vector<std::string>>, std::vector<Triplet>> FileHandl
 			std::string x = "", y = "", z = "";
 			input >> x;
 			if (x != ",") {
-				input >> y >> z;
+				input >> y;
+				input >> z;
+				if (z[z.length()-1] == ',') {
+					z[z.length()-1] = '\0';
+				}
 				Triplet newTriplet(x, y, z);
 				sol.second.push_back(newTriplet);
 			}
