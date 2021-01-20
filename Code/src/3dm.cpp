@@ -26,7 +26,7 @@
  * 		   Adrian Epifanio Rodríguez
 * @Date:   2020-12-27 12:02:38
 * @Last Modified by:   Adrian Epifanio
-* @Last Modified time: 2021-01-20 10:42:36
+* @Last Modified time: 2021-01-20 21:07:29
 */
 /*------------------  FUNCTIONS  -----------------*/
 
@@ -178,13 +178,16 @@ std::vector<int> Problem3DM::transformToPartition (void) {
 	int xSize = x_.size();
 	std::vector<BitNumber> numbers(triplets_.size(), BitNumber(bits, xSize));
 	BitNumber sum(bits, xSize);
+	std::cout << "Conversion data: " << std::endl;
 	for (unsigned i = 0; i < numbers.size(); i++) {
 		numbers[i].writeBit(triplets_[i].findElementPosition(x_, 1), 1, 1);
 		numbers[i].writeBit(triplets_[i].findElementPosition(y_, 2), 2, 1);
 		numbers[i].writeBit(triplets_[i].findElementPosition(z_, 3), 3, 1);
+		numbers[i].printNumber();
 		sol.push_back(numbers[i].toInt());
 		sum = sum + numbers[i];
 	}
+	std::cout << std::endl;
 	BitNumber aux(bits, xSize);
 	for (int i = 0; i < xSize; i++) {
 		aux.writeBit(i + 1, 1, 1);
@@ -194,7 +197,7 @@ std::vector<int> Problem3DM::transformToPartition (void) {
 	BitNumber extraElement1((2 * sum.toInt()) - aux.toInt(), bits * xSize * 3);
 	BitNumber extraElement2;
 	extraElement2 = sum + aux;
-	sol.push_back(extraElement1.toInt());
+	sol.push_back(2 * sum.toInt() - aux.toInt());
 	sol.push_back(extraElement2.toInt());
 	return sol;
 }

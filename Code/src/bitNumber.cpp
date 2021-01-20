@@ -1,10 +1,37 @@
+/*=======================================================================================
+=========================================================================================
+    =                                                                              =
+    =            Proyect:       Partition Problem                                  =
+    =            File name:     bitNumber.cpp                                      =
+    =            Author:        Francisco Javier Arocas Herrera                    =
+    =                           Oscar Hernández Díaz                               =
+    =                           Gabriel Melián Hernández                           =
+    =                           Adrián Epifanio Rodríguez Hernández                =
+    =            Date:          24/12/2020                                         =
+    =            Subject:       Computational Complexity                           =
+    =            Language:      C++                                                =
+    =            Email:         alu0100819786@ull.edu.es                           =
+    =                           alu0100906813@ull.edu.es                           =
+    =                           alu0101127163@ull.edu.es                           =
+    =                           alu0101158280@ull.edu.es                           =
+    =            Place:         Universidad De La Laguna                           =
+    =                           Escuela Superior de Ingeniería y Tecnología        =
+    =                                                                              =
+=========================================================================================
+=======================================================================================*/
 /*
-* @Author: Adrian Epifanio
-* @Date:   2021-01-14 18:19:12
+* @Author: Francisco Javier Arocas
+ * 		   Oscar Hernández
+ * 		   Gabriel Melián
+ * 		   Adrian Epifanio Rodríguez
+* @Date:   2020-12-27 12:02:38
 * @Last Modified by:   Adrian Epifanio
-* @Last Modified time: 2021-01-20 10:45:47
+* @Last Modified time: 2021-01-20 21:10:41
 */
+/*------------------  FUNCTIONS  -----------------*/
+
 #include "../include/bitNumber.hpp"
+/*------------------------------------------------*/
 
 /**
  * @brief      Constructs a new instance.
@@ -127,13 +154,9 @@ void BitNumber::set_Number (std::vector<bool> newNumber) {
  */
 int BitNumber::toInt (void) {
 	int number = 0;
-	for (unsigned i = 0; i < number_.size(); i++) {
+	for (int i = number_.size() - 1; i >= 2; i--) {
 		if (number_[i] == 1) {
-			int tmp = 1;
-			for (unsigned j = 0; j < (number_.size() - (i + 1)); j++) {
-				tmp *= 2;
-			}
-			number += tmp;
+			number += pow(2, number_.size() - i -1);
 		}
 	}
 	return number;
@@ -147,7 +170,27 @@ int BitNumber::toInt (void) {
  * @param[in]  bit        The bit
  */
 void BitNumber::writeBit (int position, int numberPos, bool bit) {
-	number_.at((((numberPos - 1) * get_NumberAmmount() * get_BitAmmount()) + (get_BitAmmount() * (position)) - 1)) = bit;
+	number_.at((((numberPos - 1) * get_NumberAmmount() * get_BitAmmount()) + (get_BitAmmount() * (position)) + 1)) = bit;
+}
+
+/**
+ * @brief      Prints a number.
+ */
+void BitNumber::printNumber (void) {
+	std::string representation = "";
+	for (unsigned i = 2; i < number_.size(); i++) {
+		if (number_[i] == true) {
+			representation += "1";
+		}
+		else {
+			representation += "0";
+		}
+		if ((i - 1) % 3 == 0 )
+			representation += " ";
+		if ((i - 1) % 9 == 0 )
+			representation += "|";
+	}
+	std::cout << "Number: " << representation << std::endl;
 }
 
 /**
