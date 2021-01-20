@@ -26,7 +26,7 @@
  * 		   Adrian Epifanio Rodríguez
 * @Date:   2020-12-27 09:02:38
 * @Last Modified by:   Adrian Epifanio
-* @Last Modified time: 2021-01-13 12:56:11
+* @Last Modified time: 2021-01-20 09:25:31
 */
 /*------------------  FUNCTIONS  -----------------*/
 
@@ -128,4 +128,21 @@ Triplet& Triplet::operator= (const Triplet& newTriplet) {
 	this -> set_Y(newTriplet.get_Y());
 	this -> set_Z(newTriplet.get_Z());
 	return *this;
+}
+
+/**
+ * @brief      Finds the position of an element into the given vector.
+ *
+ * @param      v       The vector
+ * @param[in]  letter  The letter
+ *
+ * @return     -1 if there is no position, the position otherwise
+ */
+int Triplet::findElementPosition (std::vector<std::string> v, int letter) {
+    for (unsigned i = 0; i < v.size(); i++) {
+        if ((letter == 1 && v[i] == get_X()) || (letter == 2 && v[i] == get_Y()) || (letter == 3 && v[i] == get_Z())) {
+            return i + 1;
+        }
+    }
+    return -1;
 }

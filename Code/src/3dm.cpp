@@ -26,7 +26,7 @@
  * 		   Adrian Epifanio Rodríguez
 * @Date:   2020-12-27 12:02:38
 * @Last Modified by:   Adrian Epifanio
-* @Last Modified time: 2021-01-13 19:47:11
+* @Last Modified time: 2021-01-20 10:42:36
 */
 /*------------------  FUNCTIONS  -----------------*/
 
@@ -146,6 +146,7 @@ void Problem3DM::set_Triplets (std::vector<Triplet> newTriplets) {
  * @return     The partition input data
  */
 std::vector<int> Problem3DM::transformToPartition (void) {
+	/* // Old Solution
 	std::vector<int> sol;
 	for (unsigned i = 0; i < get_Triplets().size(); i++) {
 		int sum = 0;
@@ -168,6 +169,33 @@ std::vector<int> Problem3DM::transformToPartition (void) {
 		}
 		sol.push_back(sum);
 	}
+	return sol;
+	*/
+
+	// New Solution
+	std::vector<int> sol;
+	int bits = ceil(log2(triplets_.size() + 1));
+	int xSize = x_.size();
+	std::vector<BitNumber> numbers(triplets_.size(), BitNumber(bits, xSize));
+	BitNumber sum(bits, xSize);
+	for (unsigned i = 0; i < numbers.size(); i++) {
+		numbers[i].writeBit(triplets_[i].findElementPosition(x_, 1), 1, 1);
+		numbers[i].writeBit(triplets_[i].findElementPosition(y_, 2), 2, 1);
+		numbers[i].writeBit(triplets_[i].findElementPosition(z_, 3), 3, 1);
+		sol.push_back(numbers[i].toInt());
+		sum = sum + numbers[i];
+	}
+	BitNumber aux(bits, xSize);
+	for (int i = 0; i < xSize; i++) {
+		aux.writeBit(i + 1, 1, 1);
+		aux.writeBit(i + 1, 2, 1);
+		aux.writeBit(i + 1, 3, 1);
+	}
+	BitNumber extraElement1((2 * sum.toInt()) - aux.toInt(), bits * xSize * 3);
+	BitNumber extraElement2;
+	extraElement2 = sum + aux;
+	sol.push_back(extraElement1.toInt());
+	sol.push_back(extraElement2.toInt());
 	return sol;
 }
 

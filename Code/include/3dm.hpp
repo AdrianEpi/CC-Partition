@@ -24,6 +24,7 @@
 #pragma once 
 #include "triplet.hpp"
 #include "FileHandler.hpp"
+#include "bitNumber.hpp"
 
 /*------------------------------------------------*/
 /*------------------  LIBRARIES  -----------------*/
@@ -32,6 +33,7 @@
 #include <vector>
 #include <algorithm>
 #include <cstring>
+#include <cmath>
 
 /*------------------------------------------------*/
 

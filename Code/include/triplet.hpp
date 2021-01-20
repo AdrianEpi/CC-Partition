@@ -27,6 +27,7 @@
 /*------------------  LIBRARIES  -----------------*/
 
 #include <iostream>
+#include <vector>
 
 /*------------------------------------------------*/
 
@@ -55,6 +56,9 @@ class Triplet {
         void set_X (std::string newX); 
         void set_Y (std::string newY);
         void set_Z (std::string newZ);
+
+        // Methods
+        int findElementPosition (std::vector<std::string> v, int letter);
 
         // Operator Overload
         Triplet& operator= (const Triplet& newTriplet);
