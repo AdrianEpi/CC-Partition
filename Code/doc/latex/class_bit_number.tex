@@ -1,0 +1,241 @@
+\hypertarget{class_bit_number}{}\doxysection{Bit\+Number Class Reference}
+\label{class_bit_number}\index{BitNumber@{BitNumber}}
+
+
+This class describes a number representated by a bit vector.  
+
+
+
+
+{\ttfamily \#include $<$bit\+Number.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bit_number_ac22d3ceb13b70d20390ca71261b935db}\label{class_bit_number_ac22d3ceb13b70d20390ca71261b935db}} 
+\mbox{\hyperlink{class_bit_number_ac22d3ceb13b70d20390ca71261b935db}{Bit\+Number}} (void)
+\begin{DoxyCompactList}\small\item\em Constructs a new instance. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bit_number_a7954f481aebc9eb2e14fe431d53438e0}{Bit\+Number}} (int number, int bit\+Ammount)
+\begin{DoxyCompactList}\small\item\em Constructs a new instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bit_number_a2037608235de609a052d0f313ed59ce8}\label{class_bit_number_a2037608235de609a052d0f313ed59ce8}} 
+\mbox{\hyperlink{class_bit_number_a2037608235de609a052d0f313ed59ce8}{$\sim$\+Bit\+Number}} (void)
+\begin{DoxyCompactList}\small\item\em Destroys the object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_bit_number_af67694ab3e4d7d02bab769af14fa21cb}{get\+\_\+\+Bit\+Ammount}} (void) const
+\begin{DoxyCompactList}\small\item\em Gets the bit ammount. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_bit_number_a89edd6b0d5fca8e82438a4f15d6563d7}{get\+\_\+\+Number\+Ammount}} (void) const
+\begin{DoxyCompactList}\small\item\em Gets the number ammount. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_bit_number_a7995555d5711298afa7aba4d0a27ca86}{get\+\_\+\+Set\+Ammount}} (void) const
+\begin{DoxyCompactList}\small\item\em Gets the set ammount. \end{DoxyCompactList}\item 
+std\+::vector$<$ bool $>$ \mbox{\hyperlink{class_bit_number_ab46657dd226522aef935eeec0b3508e2}{get\+\_\+\+Number}} (void) const
+\begin{DoxyCompactList}\small\item\em Gets the number. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bit_number_a18fdde55f073fceddd43dc90d4d1d605}{set\+\_\+\+Bit\+Ammount}} (int new\+Bit\+Ammount)
+\begin{DoxyCompactList}\small\item\em Sets the bit ammount. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bit_number_a985dc31ea0f6076b111cc3094dec7a13}{set\+\_\+\+Number\+Ammount}} (int new\+Number\+Ammount)
+\begin{DoxyCompactList}\small\item\em Sets the number ammount. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bit_number_ac78e2ecf88d9d311a12b795bdec87a78}{set\+\_\+\+Set\+Ammount}} (int new\+Set\+Ammount)
+\begin{DoxyCompactList}\small\item\em Sets the set ammount. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bit_number_a52ea94cc74741163f1c667b7972757d2}{set\+\_\+\+Number}} (std\+::vector$<$ bool $>$ new\+Number)
+\begin{DoxyCompactList}\small\item\em Sets the number. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_bit_number_aad3f6d0e622ea572a6f36e607e66f0c2}{to\+Int}} (void)
+\begin{DoxyCompactList}\small\item\em Returns an integer representation of the object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bit_number_ad03a4195d957fc4c73015ebac0026c76}{write\+Bit}} (int position, int number\+Pos, bool bit)
+\begin{DoxyCompactList}\small\item\em Writes a bit into it\textquotesingle{}s position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bit_number_a63a1b61f1ee4ba7428df42eff54fca0a}\label{class_bit_number_a63a1b61f1ee4ba7428df42eff54fca0a}} 
+void \mbox{\hyperlink{class_bit_number_a63a1b61f1ee4ba7428df42eff54fca0a}{print\+Number}} (void)
+\begin{DoxyCompactList}\small\item\em Prints a number. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bit_number}{Bit\+Number}} \mbox{\hyperlink{class_bit_number_a2536da1b2b77de4bf45c333ac7468f81}{operator+}} (const \mbox{\hyperlink{class_bit_number}{Bit\+Number}} \&number)
+\begin{DoxyCompactList}\small\item\em Addition operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class describes a number representated by a bit vector. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bit_number_a7954f481aebc9eb2e14fe431d53438e0}\label{class_bit_number_a7954f481aebc9eb2e14fe431d53438e0}} 
+\index{BitNumber@{BitNumber}!BitNumber@{BitNumber}}
+\index{BitNumber@{BitNumber}!BitNumber@{BitNumber}}
+\doxysubsubsection{\texorpdfstring{BitNumber()}{BitNumber()}}
+{\footnotesize\ttfamily Bit\+Number\+::\+Bit\+Number (\begin{DoxyParamCaption}\item[{int}]{num,  }\item[{int}]{bit\+Ammount }\end{DoxyParamCaption})}
+
+
+
+Constructs a new instance. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em num} & The number \\
+\hline
+\mbox{\texttt{ in}}  & {\em bit\+Ammount} & The bit ammount \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bit_number_af67694ab3e4d7d02bab769af14fa21cb}\label{class_bit_number_af67694ab3e4d7d02bab769af14fa21cb}} 
+\index{BitNumber@{BitNumber}!get\_BitAmmount@{get\_BitAmmount}}
+\index{get\_BitAmmount@{get\_BitAmmount}!BitNumber@{BitNumber}}
+\doxysubsubsection{\texorpdfstring{get\_BitAmmount()}{get\_BitAmmount()}}
+{\footnotesize\ttfamily int Bit\+Number\+::get\+\_\+\+Bit\+Ammount (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the bit ammount. 
+
+\begin{DoxyReturn}{Returns}
+The bit ammount. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bit_number_ab46657dd226522aef935eeec0b3508e2}\label{class_bit_number_ab46657dd226522aef935eeec0b3508e2}} 
+\index{BitNumber@{BitNumber}!get\_Number@{get\_Number}}
+\index{get\_Number@{get\_Number}!BitNumber@{BitNumber}}
+\doxysubsubsection{\texorpdfstring{get\_Number()}{get\_Number()}}
+{\footnotesize\ttfamily std\+::vector$<$ bool $>$ Bit\+Number\+::get\+\_\+\+Number (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the number. 
+
+\begin{DoxyReturn}{Returns}
+The number. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bit_number_a89edd6b0d5fca8e82438a4f15d6563d7}\label{class_bit_number_a89edd6b0d5fca8e82438a4f15d6563d7}} 
+\index{BitNumber@{BitNumber}!get\_NumberAmmount@{get\_NumberAmmount}}
+\index{get\_NumberAmmount@{get\_NumberAmmount}!BitNumber@{BitNumber}}
+\doxysubsubsection{\texorpdfstring{get\_NumberAmmount()}{get\_NumberAmmount()}}
+{\footnotesize\ttfamily int Bit\+Number\+::get\+\_\+\+Number\+Ammount (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the number ammount. 
+
+\begin{DoxyReturn}{Returns}
+The number ammount. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bit_number_a7995555d5711298afa7aba4d0a27ca86}\label{class_bit_number_a7995555d5711298afa7aba4d0a27ca86}} 
+\index{BitNumber@{BitNumber}!get\_SetAmmount@{get\_SetAmmount}}
+\index{get\_SetAmmount@{get\_SetAmmount}!BitNumber@{BitNumber}}
+\doxysubsubsection{\texorpdfstring{get\_SetAmmount()}{get\_SetAmmount()}}
+{\footnotesize\ttfamily int Bit\+Number\+::get\+\_\+\+Set\+Ammount (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the set ammount. 
+
+\begin{DoxyReturn}{Returns}
+The set ammount. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bit_number_a2536da1b2b77de4bf45c333ac7468f81}\label{class_bit_number_a2536da1b2b77de4bf45c333ac7468f81}} 
+\index{BitNumber@{BitNumber}!operator+@{operator+}}
+\index{operator+@{operator+}!BitNumber@{BitNumber}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bit_number}{Bit\+Number}} Bit\+Number\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_bit_number}{Bit\+Number}} \&}]{number }\end{DoxyParamCaption})}
+
+
+
+Addition operator. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em number} & The number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the addition 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bit_number_a18fdde55f073fceddd43dc90d4d1d605}\label{class_bit_number_a18fdde55f073fceddd43dc90d4d1d605}} 
+\index{BitNumber@{BitNumber}!set\_BitAmmount@{set\_BitAmmount}}
+\index{set\_BitAmmount@{set\_BitAmmount}!BitNumber@{BitNumber}}
+\doxysubsubsection{\texorpdfstring{set\_BitAmmount()}{set\_BitAmmount()}}
+{\footnotesize\ttfamily void Bit\+Number\+::set\+\_\+\+Bit\+Ammount (\begin{DoxyParamCaption}\item[{int}]{new\+Bit\+Ammount }\end{DoxyParamCaption})}
+
+
+
+Sets the bit ammount. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em new\+Bit\+Ammount} & The new bit ammount \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bit_number_a52ea94cc74741163f1c667b7972757d2}\label{class_bit_number_a52ea94cc74741163f1c667b7972757d2}} 
+\index{BitNumber@{BitNumber}!set\_Number@{set\_Number}}
+\index{set\_Number@{set\_Number}!BitNumber@{BitNumber}}
+\doxysubsubsection{\texorpdfstring{set\_Number()}{set\_Number()}}
+{\footnotesize\ttfamily void Bit\+Number\+::set\+\_\+\+Number (\begin{DoxyParamCaption}\item[{std\+::vector$<$ bool $>$}]{new\+Number }\end{DoxyParamCaption})}
+
+
+
+Sets the number. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em new\+Number} & The new number \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bit_number_a985dc31ea0f6076b111cc3094dec7a13}\label{class_bit_number_a985dc31ea0f6076b111cc3094dec7a13}} 
+\index{BitNumber@{BitNumber}!set\_NumberAmmount@{set\_NumberAmmount}}
+\index{set\_NumberAmmount@{set\_NumberAmmount}!BitNumber@{BitNumber}}
+\doxysubsubsection{\texorpdfstring{set\_NumberAmmount()}{set\_NumberAmmount()}}
+{\footnotesize\ttfamily void Bit\+Number\+::set\+\_\+\+Number\+Ammount (\begin{DoxyParamCaption}\item[{int}]{new\+Number\+Ammount }\end{DoxyParamCaption})}
+
+
+
+Sets the number ammount. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em new\+Number\+Ammount} & The new number ammount \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bit_number_ac78e2ecf88d9d311a12b795bdec87a78}\label{class_bit_number_ac78e2ecf88d9d311a12b795bdec87a78}} 
+\index{BitNumber@{BitNumber}!set\_SetAmmount@{set\_SetAmmount}}
+\index{set\_SetAmmount@{set\_SetAmmount}!BitNumber@{BitNumber}}
+\doxysubsubsection{\texorpdfstring{set\_SetAmmount()}{set\_SetAmmount()}}
+{\footnotesize\ttfamily void Bit\+Number\+::set\+\_\+\+Set\+Ammount (\begin{DoxyParamCaption}\item[{int}]{new\+Set\+Ammount }\end{DoxyParamCaption})}
+
+
+
+Sets the set ammount. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em new\+Set\+Ammount} & The new set ammount \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bit_number_aad3f6d0e622ea572a6f36e607e66f0c2}\label{class_bit_number_aad3f6d0e622ea572a6f36e607e66f0c2}} 
+\index{BitNumber@{BitNumber}!toInt@{toInt}}
+\index{toInt@{toInt}!BitNumber@{BitNumber}}
+\doxysubsubsection{\texorpdfstring{toInt()}{toInt()}}
+{\footnotesize\ttfamily int Bit\+Number\+::to\+Int (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Returns an integer representation of the object. 
+
+\begin{DoxyReturn}{Returns}
+Integer representation of the object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bit_number_ad03a4195d957fc4c73015ebac0026c76}\label{class_bit_number_ad03a4195d957fc4c73015ebac0026c76}} 
+\index{BitNumber@{BitNumber}!writeBit@{writeBit}}
+\index{writeBit@{writeBit}!BitNumber@{BitNumber}}
+\doxysubsubsection{\texorpdfstring{writeBit()}{writeBit()}}
+{\footnotesize\ttfamily void Bit\+Number\+::write\+Bit (\begin{DoxyParamCaption}\item[{int}]{position,  }\item[{int}]{number\+Pos,  }\item[{bool}]{bit }\end{DoxyParamCaption})}
+
+
+
+Writes a bit into it\textquotesingle{}s position. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em position} & The position \\
+\hline
+\mbox{\texttt{ in}}  & {\em number\+Pos} & The number position (1, 2, 3) \\
+\hline
+\mbox{\texttt{ in}}  & {\em bit} & The bit \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/bit\+Number.\+hpp\item 
+src/bit\+Number.\+cpp\end{DoxyCompactItemize}

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['chrono_74',['Chrono',['../class_chrono.html',1,'']]],
-  ['color_75',['Color',['../class_color.html',1,'']]]
+  ['bitnumber_90',['BitNumber',['../class_bit_number.html',1,'']]]
 ];

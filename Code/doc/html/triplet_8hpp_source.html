@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CC-Partition: include/triplet.hpp Source File</title>
+<title>My Project: include/triplet.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">CC-Partition
-   &#160;<span id="projectnumber">1.3</span>
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -99,35 +98,39 @@ $(function() {
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">/*------------------  LIBRARIES  -----------------*/</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">/*------------------------------------------------*/</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_triplet.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_triplet.html">Triplet</a> {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="comment">// Attributes</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        std::string x_;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        std::string y_;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        std::string z_;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="comment">// Builders &amp; Destroyer</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="class_triplet.html#a587da8ebec02d40066d801de460d3e16">Triplet</a> (<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="class_triplet.html#a587da8ebec02d40066d801de460d3e16">Triplet</a> (std::string x, std::string y, std::string z);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="class_triplet.html#aafbe1ad1d4dee996898e47ba083c8987">~Triplet</a> (<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="comment">// Getters &amp; Setters</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        std::string <a class="code" href="class_triplet.html#aa247421a2ea8d96a9dbc4a59f20ceb4c">get_X</a> (<span class="keywordtype">void</span>) <span class="keyword">const</span>; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        std::string <a class="code" href="class_triplet.html#a0826f698ba206a1f0f9d8a5d1edae82b">get_Y</a> (<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        std::string <a class="code" href="class_triplet.html#a11d14d54ac1d4f30e7dfa51ff2e32fe9">get_Z</a> (<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_triplet.html#ad136b190802b0687b89540c26b2da6d3">set_X</a> (std::string newX); </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_triplet.html#add61f1de8958192e42816372c368b0d2">set_Y</a> (std::string newY);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_triplet.html#a6c9b16dad15eb49ea23a1c527e8eb6de">set_Z</a> (std::string newZ);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="comment">// Operator Overload</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="class_triplet.html">Triplet</a>&amp; <a class="code" href="class_triplet.html#aa398a2bc096c1c230eeb8055ecc7c777">operator= </a>(<span class="keyword">const</span> <a class="code" href="class_triplet.html">Triplet</a>&amp; newTriplet);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">/*------------------------------------------------*/</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_triplet.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_triplet.html">Triplet</a> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="comment">// Attributes</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        std::string x_;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        std::string y_;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        std::string z_;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">// Builders &amp; Destroyer</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="class_triplet.html#a587da8ebec02d40066d801de460d3e16">Triplet</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="class_triplet.html#a587da8ebec02d40066d801de460d3e16">Triplet</a> (std::string x, std::string y, std::string z);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="class_triplet.html#aafbe1ad1d4dee996898e47ba083c8987">~Triplet</a> (<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="comment">// Getters &amp; Setters</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        std::string <a class="code" href="class_triplet.html#aa247421a2ea8d96a9dbc4a59f20ceb4c">get_X</a> (<span class="keywordtype">void</span>) <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        std::string <a class="code" href="class_triplet.html#a0826f698ba206a1f0f9d8a5d1edae82b">get_Y</a> (<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        std::string <a class="code" href="class_triplet.html#a11d14d54ac1d4f30e7dfa51ff2e32fe9">get_Z</a> (<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_triplet.html#ad136b190802b0687b89540c26b2da6d3">set_X</a> (std::string newX); </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_triplet.html#add61f1de8958192e42816372c368b0d2">set_Y</a> (std::string newY);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_triplet.html#a6c9b16dad15eb49ea23a1c527e8eb6de">set_Z</a> (std::string newZ);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="comment">// Methods</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_triplet.html#a29367ff6a467dc4ddfc0c88f1b6c8204">findElementPosition</a> (std::vector&lt;std::string&gt; v, <span class="keywordtype">int</span> letter);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="comment">// Operator Overload</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="class_triplet.html">Triplet</a>&amp; <a class="code" href="class_triplet.html#aa398a2bc096c1c230eeb8055ecc7c777">operator= </a>(<span class="keyword">const</span> <a class="code" href="class_triplet.html">Triplet</a>&amp; newTriplet);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclass_triplet_html_aafbe1ad1d4dee996898e47ba083c8987"><div class="ttname"><a href="class_triplet.html#aafbe1ad1d4dee996898e47ba083c8987">Triplet::~Triplet</a></div><div class="ttdeci">~Triplet(void)</div><div class="ttdoc">Destroys the object.</div><div class="ttdef"><b>Definition:</b> triplet.cpp:62</div></div>
 <div class="ttc" id="aclass_triplet_html_ad136b190802b0687b89540c26b2da6d3"><div class="ttname"><a href="class_triplet.html#ad136b190802b0687b89540c26b2da6d3">Triplet::set_X</a></div><div class="ttdeci">void set_X(std::string newX)</div><div class="ttdoc">Sets the x.</div><div class="ttdef"><b>Definition:</b> triplet.cpp:97</div></div>
@@ -135,10 +138,11 @@ $(function() {
 <div class="ttc" id="aclass_triplet_html_aa398a2bc096c1c230eeb8055ecc7c777"><div class="ttname"><a href="class_triplet.html#aa398a2bc096c1c230eeb8055ecc7c777">Triplet::operator=</a></div><div class="ttdeci">Triplet &amp; operator=(const Triplet &amp;newTriplet)</div><div class="ttdoc">Assignment operator.</div><div class="ttdef"><b>Definition:</b> triplet.cpp:126</div></div>
 <div class="ttc" id="aclass_triplet_html_a6c9b16dad15eb49ea23a1c527e8eb6de"><div class="ttname"><a href="class_triplet.html#a6c9b16dad15eb49ea23a1c527e8eb6de">Triplet::set_Z</a></div><div class="ttdeci">void set_Z(std::string newZ)</div><div class="ttdoc">Sets the z.</div><div class="ttdef"><b>Definition:</b> triplet.cpp:115</div></div>
 <div class="ttc" id="aclass_triplet_html_add61f1de8958192e42816372c368b0d2"><div class="ttname"><a href="class_triplet.html#add61f1de8958192e42816372c368b0d2">Triplet::set_Y</a></div><div class="ttdeci">void set_Y(std::string newY)</div><div class="ttdoc">Sets the y.</div><div class="ttdef"><b>Definition:</b> triplet.cpp:106</div></div>
+<div class="ttc" id="aclass_triplet_html_a29367ff6a467dc4ddfc0c88f1b6c8204"><div class="ttname"><a href="class_triplet.html#a29367ff6a467dc4ddfc0c88f1b6c8204">Triplet::findElementPosition</a></div><div class="ttdeci">int findElementPosition(std::vector&lt; std::string &gt; v, int letter)</div><div class="ttdoc">Finds the position of an element into the given vector.</div><div class="ttdef"><b>Definition:</b> triplet.cpp:141</div></div>
 <div class="ttc" id="aclass_triplet_html_a11d14d54ac1d4f30e7dfa51ff2e32fe9"><div class="ttname"><a href="class_triplet.html#a11d14d54ac1d4f30e7dfa51ff2e32fe9">Triplet::get_Z</a></div><div class="ttdeci">std::string get_Z(void) const</div><div class="ttdoc">Gets the z.</div><div class="ttdef"><b>Definition:</b> triplet.cpp:88</div></div>
 <div class="ttc" id="aclass_triplet_html_a0826f698ba206a1f0f9d8a5d1edae82b"><div class="ttname"><a href="class_triplet.html#a0826f698ba206a1f0f9d8a5d1edae82b">Triplet::get_Y</a></div><div class="ttdeci">std::string get_Y(void) const</div><div class="ttdoc">Gets the y.</div><div class="ttdef"><b>Definition:</b> triplet.cpp:79</div></div>
 <div class="ttc" id="aclass_triplet_html_a587da8ebec02d40066d801de460d3e16"><div class="ttname"><a href="class_triplet.html#a587da8ebec02d40066d801de460d3e16">Triplet::Triplet</a></div><div class="ttdeci">Triplet(void)</div><div class="ttdoc">Constructs a new instance.</div><div class="ttdef"><b>Definition:</b> triplet.cpp:40</div></div>
-<div class="ttc" id="aclass_triplet_html"><div class="ttname"><a href="class_triplet.html">Triplet</a></div><div class="ttdoc">This class describes a triplet.</div><div class="ttdef"><b>Definition:</b> triplet.hpp:36</div></div>
+<div class="ttc" id="aclass_triplet_html"><div class="ttname"><a href="class_triplet.html">Triplet</a></div><div class="ttdoc">This class describes a triplet.</div><div class="ttdef"><b>Definition:</b> triplet.hpp:37</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -1,20 +1,6 @@
 var searchData=
 [
-  ['set_5fendclock_41',['set_EndClock',['../class_chrono.html#a4a6e85106404b14538831dcfe7774d9f',1,'Chrono']]],
-  ['set_5fendtime_42',['set_EndTime',['../class_chrono.html#afbd474501ff81804c5d48c8218e8cf36',1,'Chrono']]],
-  ['set_5ffilename_43',['set_FileName',['../class_file_handler.html#a8ebbda1767f7a52dfa1b4988b5c6d630',1,'FileHandler']]],
-  ['set_5foriginal_44',['set_Original',['../class_partition.html#a96f986581b918e7c4a2c4814886a5631',1,'Partition']]],
-  ['set_5fpartitioned_45',['set_Partitioned',['../class_partition.html#a30db71090e3ddc3404bf196f819955de',1,'Partition']]],
-  ['set_5fstartclock_46',['set_StartClock',['../class_chrono.html#ab5e8b1f97fbdad1449b61cc20e09a862',1,'Chrono']]],
-  ['set_5fstarttime_47',['set_StartTime',['../class_chrono.html#ad58b7fd644a6af1f3a8d117dc7011d55',1,'Chrono']]],
-  ['set_5ftotaltime_48',['set_TotalTime',['../class_chrono.html#a27e8f49ad23b3648d399449657c136da',1,'Chrono']]],
-  ['set_5ftriplets_49',['set_Triplets',['../class_problem3_d_m.html#a062554d42d470676b9af2f697369f92c',1,'Problem3DM']]],
-  ['set_5fv1_50',['set_V1',['../class_partition.html#a2f86aa4800be2c63ff2a48b91525c34e',1,'Partition']]],
-  ['set_5fv2_51',['set_V2',['../class_partition.html#ae8ea5a80362f1863e1265610a6db98cf',1,'Partition']]],
-  ['set_5fx_52',['set_X',['../class_problem3_d_m.html#acad652abaf56cad765375432d41fed09',1,'Problem3DM::set_X()'],['../class_triplet.html#ad136b190802b0687b89540c26b2da6d3',1,'Triplet::set_X()']]],
-  ['set_5fy_53',['set_Y',['../class_problem3_d_m.html#a2cf5993802f45f3e06be68233fc7b442',1,'Problem3DM::set_Y()'],['../class_triplet.html#add61f1de8958192e42816372c368b0d2',1,'Triplet::set_Y()']]],
-  ['set_5fz_54',['set_Z',['../class_problem3_d_m.html#a99d2e39bcf68feabcaca018945b79b46',1,'Problem3DM::set_Z()'],['../class_triplet.html#a6c9b16dad15eb49ea23a1c527e8eb6de',1,'Triplet::set_Z()']]],
-  ['sortandsolve_55',['sortAndSolve',['../class_partition.html#a42c5bde9a4b286b9262193b126e4ab19',1,'Partition']]],
-  ['startchrono_56',['startChrono',['../class_chrono.html#acf9ab5d376fe0f29b86ec3bcc75a0420',1,'Chrono']]],
-  ['stopchrono_57',['stopChrono',['../class_chrono.html#a8220ee5d73f0be9696f4167ada8754d1',1,'Chrono']]]
+  ['readnormal_47',['readNormal',['../class_file_handler.html#abed3452739152f3fdf3e59696dadac43',1,'FileHandler']]],
+  ['restartchrono_48',['restartChrono',['../class_chrono.html#a493fc1a9add245fb03f2a44762a17185',1,'Chrono']]],
+  ['resumechrono_49',['resumeChrono',['../class_chrono.html#aaba9f7c88b75766f827a871b51d08d54',1,'Chrono']]]
 ];

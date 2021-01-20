@@ -1,5 +1,24 @@
 var searchData=
 [
-  ['transformtopartition_137',['transformToPartition',['../class_problem3_d_m.html#a243ca1ba45f9cfd54cbf5bc7720a4f01',1,'Problem3DM']]],
-  ['triplet_138',['Triplet',['../class_triplet.html#a587da8ebec02d40066d801de460d3e16',1,'Triplet::Triplet(void)'],['../class_triplet.html#ae1bb81b16d86e97c601b77bed7d328e6',1,'Triplet::Triplet(std::string x, std::string y, std::string z)']]]
+  ['set_5fbitammount_146',['set_BitAmmount',['../class_bit_number.html#a18fdde55f073fceddd43dc90d4d1d605',1,'BitNumber']]],
+  ['set_5fendclock_147',['set_EndClock',['../class_chrono.html#a4a6e85106404b14538831dcfe7774d9f',1,'Chrono']]],
+  ['set_5fendtime_148',['set_EndTime',['../class_chrono.html#afbd474501ff81804c5d48c8218e8cf36',1,'Chrono']]],
+  ['set_5ffilename_149',['set_FileName',['../class_file_handler.html#a8ebbda1767f7a52dfa1b4988b5c6d630',1,'FileHandler']]],
+  ['set_5fnumber_150',['set_Number',['../class_bit_number.html#a52ea94cc74741163f1c667b7972757d2',1,'BitNumber']]],
+  ['set_5fnumberammount_151',['set_NumberAmmount',['../class_bit_number.html#a985dc31ea0f6076b111cc3094dec7a13',1,'BitNumber']]],
+  ['set_5foriginal_152',['set_Original',['../class_partition.html#a96f986581b918e7c4a2c4814886a5631',1,'Partition']]],
+  ['set_5fpartitioned_153',['set_Partitioned',['../class_partition.html#a30db71090e3ddc3404bf196f819955de',1,'Partition']]],
+  ['set_5fsetammount_154',['set_SetAmmount',['../class_bit_number.html#ac78e2ecf88d9d311a12b795bdec87a78',1,'BitNumber']]],
+  ['set_5fstartclock_155',['set_StartClock',['../class_chrono.html#ab5e8b1f97fbdad1449b61cc20e09a862',1,'Chrono']]],
+  ['set_5fstarttime_156',['set_StartTime',['../class_chrono.html#ad58b7fd644a6af1f3a8d117dc7011d55',1,'Chrono']]],
+  ['set_5ftotaltime_157',['set_TotalTime',['../class_chrono.html#a27e8f49ad23b3648d399449657c136da',1,'Chrono']]],
+  ['set_5ftriplets_158',['set_Triplets',['../class_problem3_d_m.html#a062554d42d470676b9af2f697369f92c',1,'Problem3DM']]],
+  ['set_5fv1_159',['set_V1',['../class_partition.html#a2f86aa4800be2c63ff2a48b91525c34e',1,'Partition']]],
+  ['set_5fv2_160',['set_V2',['../class_partition.html#ae8ea5a80362f1863e1265610a6db98cf',1,'Partition']]],
+  ['set_5fx_161',['set_X',['../class_problem3_d_m.html#acad652abaf56cad765375432d41fed09',1,'Problem3DM::set_X()'],['../class_triplet.html#ad136b190802b0687b89540c26b2da6d3',1,'Triplet::set_X()']]],
+  ['set_5fy_162',['set_Y',['../class_problem3_d_m.html#a2cf5993802f45f3e06be68233fc7b442',1,'Problem3DM::set_Y()'],['../class_triplet.html#add61f1de8958192e42816372c368b0d2',1,'Triplet::set_Y()']]],
+  ['set_5fz_163',['set_Z',['../class_problem3_d_m.html#a99d2e39bcf68feabcaca018945b79b46',1,'Problem3DM::set_Z()'],['../class_triplet.html#a6c9b16dad15eb49ea23a1c527e8eb6de',1,'Triplet::set_Z()']]],
+  ['sortandsolve_164',['sortAndSolve',['../class_partition.html#a42c5bde9a4b286b9262193b126e4ab19',1,'Partition']]],
+  ['startchrono_165',['startChrono',['../class_chrono.html#acf9ab5d376fe0f29b86ec3bcc75a0420',1,'Chrono']]],
+  ['stopchrono_166',['stopChrono',['../class_chrono.html#a8220ee5d73f0be9696f4167ada8754d1',1,'Chrono']]]
 ];

@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['calculatesum_0',['calculateSum',['../class_partition.html#a6c2d6e0f61557393ddfe1ada36ebd55e',1,'Partition']]],
-  ['chrono_1',['Chrono',['../class_chrono.html',1,'Chrono'],['../class_chrono.html#a3ac5e047174f389e7bd8aae71c6b5e8c',1,'Chrono::Chrono()']]],
-  ['color_2',['Color',['../class_color.html',1,'']]]
+  ['bitnumber_0',['BitNumber',['../class_bit_number.html',1,'BitNumber'],['../class_bit_number.html#ac22d3ceb13b70d20390ca71261b935db',1,'BitNumber::BitNumber(void)'],['../class_bit_number.html#a7954f481aebc9eb2e14fe431d53438e0',1,'BitNumber::BitNumber(int number, int bitAmmount)']]]
 ];
